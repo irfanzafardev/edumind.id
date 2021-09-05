@@ -101,3 +101,61 @@ img {
   color: #fff !important;
 }
 /* End of Navbar */
+
+/* Header */
+.header {
+  margin: 60px 0 0 0;
+  height: 70vh;
+  background-color: transparent;
+}
+
+.header .vector-below {
+  position: absolute;
+  bottom: 140px;
+}
+
+.header .vector-above {
+  position: absolute;
+  right: -10px;
+  top: 64px;
+}
+
+.header .header-text {
+  background-color: transparent;
+  height: 70vh;
+}
+
+.header .header-text .text {
+  color: #424874;
+}
+/* End of Header */
+
+/* Statistic */
+.statistic {
+  background-color: #747DAB;
+  height: 13vh;
+}
+
+.statistic .statistic-row {
+  background-color: transparent;
+  height: 13vh;
+}
+
+.statistic .statistic-row {
+  background-color: transparent;
+  height: 13vh;
+}
+
+.statistic .statistic-row .img-column {
+  background-color: transparent;
+  padding: 20px 0 0 0;
+}
+
+.statistic .statistic-row .text-column {
+  background-color: transparent;
+  padding: 14px 0 0 0;
+}
+
+
+/* End of Statistic */
+
