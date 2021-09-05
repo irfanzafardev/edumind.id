@@ -133,22 +133,18 @@ img {
 /* Statistic */
 .statistic {
   background-color: #747DAB;
-  height: 13vh;
+  /* height: 13vh; */
 }
 
 .statistic .statistic-row {
   background-color: transparent;
-  height: 13vh;
+  /* height: 13vh; */
 }
 
-.statistic .statistic-row {
-  background-color: transparent;
-  height: 13vh;
-}
 
 .statistic .statistic-row .img-column {
   background-color: transparent;
-  padding: 20px 0 0 0;
+  padding: 20px 10px 0 0;
 }
 
 .statistic .statistic-row .text-column {
