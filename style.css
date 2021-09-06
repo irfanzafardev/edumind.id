@@ -194,4 +194,56 @@ img {
 
 /* End of 2W Questions */
 
+/* Our-features */
+
+.our-features {
+  background-color: #747DAB;
+  max-height: 420px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.our-features .our-features-header {
+  padding: 40px 0 40px 0;
+}
+
+.our-features .our-features-cards .card {
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+
+
+.our-features .our-features-cards .card .card-body h5 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #424874;
+}
+
+.our-features .our-features-cards .card .card-body a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #747DAB;
+}
+
+.our-features .our-features-cards .card .card-body span {
+  padding: 10px 0 0 0;
+}
+
+
+
+
+/* End of Our-features */
+
+
 
