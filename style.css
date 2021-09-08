@@ -8,7 +8,7 @@
 body {
   background: url(./assets/bg/Background-01.jpg);
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: contain;
 }
 
 /* Navigation Bar */
@@ -104,6 +104,7 @@ img {
 /* End of Navbar */
 
 /* Header */
+
 .header {
   margin: 60px 0 0 0;
   height: 70vh;
@@ -139,6 +140,7 @@ img {
 /* End of Header */
 
 /* Statistic */
+
 .statistic {
   background-color: #747DAB;
 }
@@ -157,7 +159,6 @@ img {
   background-color: transparent;
   padding: 14px 0 0 0;
 }
-
 /* End of Statistic */
 
 /* 2W Questions */
@@ -191,7 +192,6 @@ img {
   letter-spacing: 0em;
   text-align: justified;
 }
-
 /* End of 2W Questions */
 
 /* Our-features */
@@ -238,11 +238,288 @@ img {
 .our-features .our-features-cards .card .card-body span {
   padding: 10px 0 0 0;
 }
-
-
-
-
 /* End of Our-features */
+
+/* FAQ */
+
+.faq {
+  background-color: #DCD6F7;
+  margin: 200px 0 0 0;
+}
+
+.faq .container {
+  padding: 50px 30px 30px 30px;
+}
+
+.faq .container img {
+  margin: 0;
+}
+
+.faq .container .question-col {
+  padding: 0 0 0 20px;
+  margin: -20px 0 0 0;
+}
+
+.faq .container h2 {
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 77px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #424874;
+}
+
+.faq .container p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-align: justified;
+  color: #424874;
+}
+/* End of FAQ */
+
+/* Tagline */
+
+.tagline {
+  background-color: #747DAB;
+}
+
+.tagline .container {
+  padding: 10px;
+}
+
+.tagline .container h3 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/* End of Tagline */
+
+/* Testimonial */
+
+.testimonial-article .container .testimonial-heading {
+  border-style: none none solid none;
+  width: 350px;
+  color: #424874;
+}
+
+.testimonial-article .container .testimonial-heading h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424874;
+}
+
+.testimonial-article .container .testimonial-cards .card  {
+  background-color: #F4EEFF;
+  box-shadow: 0px 0px 40px 0px #00000040;
+  border-radius: 15px;
+}
+
+.testimonial-article .container .testimonial-cards .card .card-img img  {
+  border-radius: 100%;
+}
+
+.testimonial-article .container .testimonial-cards .card .card-body p  {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424874
+}
+
+.testimonial-article .container .testimonial-cards .card .card-body h5  {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424874
+}
+/* End of Testimonial */
+
+/* Article */
+
+.article .container .article-heading {
+  border-style: none none solid none;
+  width: 350px;
+  color: #424874;
+}
+
+.article .container .article-heading h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424874;
+}
+
+.article .container .article-cards .card  {
+  background-color: #F4EEFF;
+  box-shadow: 0px 0px 40px 0px #00000040;
+  border-radius: 12px;
+}
+
+.article .container .article-cards .card .card-img img  {
+  border-radius: 100%;
+}
+
+.article .container .article-cards .card .card-body .card-date {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5A5A5A;
+
+}
+
+.article .container .article-cards .card .card-body .card-title  {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #262626;
+}
+
+.article .container .article-cards .card .card-body .card-act a {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #747DAB;
+}
+
+.article .container .article-cards .card .card-body .card-act h5 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 5px 0 0 0;
+}
+/* End of Article */
+
+/* Footer */
+
+footer {
+  background-color: #424874;
+}
+
+footer h4 {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+footer .footer-text {
+  padding: 0 30px 0 0 ;
+  text-align: justified;
+}
+
+footer .footer-text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+footer .footer-text a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: justified;
+}
+
+footer .social-item {
+  margin: 0 0 10px 0;
+}
+
+footer .social-item a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: justified;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .contact-item {
+  margin: 0 0 10px 0;
+}
+
+footer .contact-item a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: justified;
+  text-decoration: none;
+  color: #fff;
+}
+/* End of footer */
+
+/* Copyright */
+.copyright {
+  background-color: #262626;
+}
+/* End of Copyright */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
