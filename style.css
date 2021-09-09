@@ -12,6 +12,7 @@ body {
 }
 
 /* Navigation Bar */
+
 .navbar {
   background-color: #424874;
 }
@@ -27,7 +28,6 @@ body {
 .navbar-nav {
   margin-top: 5px;
 }
-
 
 .nav-item {
   margin-right: 24px;
@@ -54,7 +54,7 @@ body {
   width: 200px;
   height: 30px;
   border: 2px solid #fff;
-  border-radius: 50px;      
+  border-radius: 50px;
 }
 
 .element-container {
@@ -130,7 +130,38 @@ img {
 
 .header .header-text .text {
   color: #424874;
+  padding: 0 180px 0 0;
 }
+
+.header .header-text .text h4 {
+  margin: 0;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.header .header-text .text img {
+  margin: 0 0 10px -5px;
+}
+
+
+.header .header-text .text p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
 
 .header .header-text .text button {
   padding: 8px 12px;
@@ -198,9 +229,10 @@ img {
 
 .our-features {
   background-color: #747DAB;
-  max-height: 420px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
+  /* max-height: 420px; */
+  /* border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px; */
+  padding: 0 0 50px 0;
 }
 
 .our-features .our-features-header {
@@ -244,7 +276,7 @@ img {
 
 .faq {
   background-color: #DCD6F7;
-  margin: 200px 0 0 0;
+  margin: 60px 0 0 0;
 }
 
 .faq .container {
@@ -505,6 +537,7 @@ footer .contact-item a {
 /* End of footer */
 
 /* Copyright */
+
 .copyright {
   background-color: #262626;
 }
