@@ -29,31 +29,44 @@
               <div class="card-body px-1 px-lg-5">
                 <h5 class="card-title text-center">Daftar</h5>
                 <form>
-                  <div class="input-data mb-3">
+                  <div class="input-data mb-2">
                     <label for="exampleInputEmail1" class="form-label">Alamat Email</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   </div>
-                  <div class="input-data mb-3">
+                  <div class="input-data mb-2">
                     <label for="exampleInputPassword1" class="form-label">Nama Lengkap</label>
                     <input type="text" class="form-control" id="exampleInputName">
                   </div>
-                  <div class="input-data mb-3">
+                  <div class="input-data mb-2">
                     <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
                   <div class="input-data mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Kondirmasi Kata Sandi</label>
+                    <label for="exampleInputPassword1" class="form-label">Konfirmasi Kata Sandi</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                   </div>
-                  <div class="mb-3 form-check d-flex justify-content-between">
-                    <div class="signup-checkbox">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Ingat Saya</label>
-                    </div>
-                    <a class="text-decoration-none" href="#">Lupa Password?</a>
+                  <div class="action-btn text-center">
+                    <button type="submit" class="btn btn-login">Login</button>
+                    <a type="submit" href="signup.html" class="btn btn-signup">
+                      Sign Up
+                    </a>
                   </div>
-                  <div class="action-btn text-start">
-                    <button type="submit" class="btn btn-signup">Sign Up</button>
+                  <div class="action-label text-center">
+                    <label class="form-check-label align-self-center">or login with</label>
+                  </div>
+                  <div class="alt-action-btn text-center">
+                    <button type="submit" class="btn btn-facebook">
+                      <div class="">
+                        <img class="img-fluid d-inline-block" src="./assets/ic/facebook-login.png" alt="" width="20px">
+                        <p class="d-inline-block m-0">Facebook</p>
+                      </div>
+                    </button>
+                    <button type="submit" class="btn btn-google">
+                      <div class="">
+                        <img class="img-fluid d-inline-block" src="./assets/ic/google.png" alt="" width="20px">
+                        <p class="d-inline-block m-0">Google</p>
+                      </div>
+                    </button>
                   </div>
                 </form>
               </div>
