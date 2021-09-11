@@ -7,31 +7,31 @@
 
 body {
   height: 100vh;
-  background: url(./assets/bg/Background-01.jpg);
+  background: url(../assets/bg/Background-01.jpg);
   /* background-color: aqua; */
   background-repeat: repeat-x;
   background-size: contain;
 }
 
-.login {
+.signup {
   min-width: 100vw;
 }
 
-.login .container {
+.signup .container {
   background-color: transparent;
 }
 
-.login .container .card {
-  padding: 70px 50px 70px 50px;
+.signup .container .card {
+  padding: 40px 50px 40px 50px;
   background-color: #A6B1E1;
   border-radius: 16px;
 }
 
-.login .container .card .card-body {
+.signup .container .card .card-body {
   padding: 0 0 0 0;
 }
 
-.login .container .card .card-body .card-title {
+.signup .container .card .card-body .card-title {
   font-family: Poppins;
   font-size: 26px;
   font-style: normal;
@@ -40,16 +40,43 @@ body {
   color: #424874;
 }
 
-.login .container .card .card-body .form-label {
+.signup .container .card .card-body .input-data input {
+  background-color: #F4EEFF;
+  height: 30px;
+}
+
+.signup .container .card .card-body .form-label {
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   text-align: left;
   color: #424874;
 }
 
-.login .container .card .card-body .form-check label {
+.signup .container .card .card-body .form-check label {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #747DAB;
+}
+
+.signup .container .card .card-body .form-check a {
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #747DAB;
+}
+
+.signup .container .card .card-body .action-label label {
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -60,29 +87,7 @@ body {
   color: #747DAB;
 }
 
-.login .container .card .card-body .form-check a {
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #747DAB;
-}
-
-.login .container .card .card-body .action-label label {
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #747DAB;
-}
-
-.login .container .card .card-body .btn-login {
+.signup .container .card .card-body .btn-login {
   width: 100px;
   background-color: #424874;
   padding: 6px 20px 6px 20px;
@@ -95,7 +100,7 @@ body {
   text-align: center;
 }
 
-.login .container .card .card-body .btn-signup {
+.signup .container .card .card-body .btn-signup {
   width: 100px;
   background-color: #262626;
   padding: 6px 20px 6px 20px;
@@ -107,7 +112,7 @@ body {
   text-align: center;
 }
 
-.login .container .card .card-body .btn-facebook {
+.signup .container .card .card-body .btn-facebook {
   width: 120px;
   background-color: #fff;
   padding: 6px 10px 6px 10px;
@@ -119,7 +124,7 @@ body {
   text-align: center;
 }
 
-.login .container .card .card-body .btn-google {
+.signup .container .card .card-body .btn-google {
   width: 120px;
   background-color: #fff;
   padding: 6px 10px 6px 10px;
@@ -132,7 +137,7 @@ body {
 }
 
 
-/* End of Login */
+/* End of signup */
 
 
 /* Copyright */

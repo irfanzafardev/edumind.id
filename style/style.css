@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url(./assets/bg/Background-01.jpg);
+  background: url(../assets/bg/Background-01.jpg);
   background-repeat: repeat-y;
   background-size: contain;
 }
@@ -332,6 +332,18 @@ img {
   letter-spacing: 0em;
   text-align: center;
 }
+
+.tagline .container h3 a {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: underline;
+  color: #DCD6F7;
+}
 /* End of Tagline */
 
 /* Testimonial */
@@ -351,6 +363,56 @@ img {
   letter-spacing: 0em;
   text-align: center;
   color: #424874;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 700px;
+  height: 100%;
+}
+
+.testimonial-article .container .swiper {
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+.testimonial-article .container .swiper .swiper-wrapper .card  {
+  background-color: #F4EEFF;
+  box-shadow: 0px 0px 40px 0px #00000040;
+  border-radius: 15px;
+}
+
+.testimonial-article .container .swiper .swiper-wrapper .card .card-img img  {
+  border-radius: 100%;
+}
+
+.testimonial-article .container .swiper .swiper-wrapper .card .card-body p  {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424874
+}
+
+.testimonial-article .container .swiper .swiper-wrapper .card .card-body h5  {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #424874
 }
 
 .testimonial-article .container .testimonial-cards .card  {
@@ -394,6 +456,11 @@ img {
   color: #424874;
 }
 
+.article .container .slider {
+  background-color: transparent;
+  padding: 20px 0;
+}
+
 .article .container .article-heading h1 {
   font-family: Poppins;
   font-size: 32px;
@@ -407,7 +474,7 @@ img {
 
 .article .container .article-cards .card  {
   background-color: #F4EEFF;
-  box-shadow: 0px 0px 40px 0px #00000040;
+  box-shadow: 0px 4px 15px 0px #00000040;
   border-radius: 12px;
 }
 
@@ -459,6 +526,36 @@ img {
   text-align: left;
   margin: 5px 0 0 0;
 }
+
+.prev-arrow {
+  background-color: #747DAB;
+  position: absolute;
+  bottom: 170px;
+  left: 1%;
+  color: #fff;
+  width: 40px;
+  height: 80px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+  z-index: 1;
+}
+
+.next-arrow {
+  background-color: #747DAB;
+  position: absolute;
+  bottom: 170px;
+  right: 1%;
+  color: #fff;
+  width: 40px;
+  height: 80px;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+}
+
 /* End of Article */
 
 /* Footer */
