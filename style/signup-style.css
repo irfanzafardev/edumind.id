@@ -8,7 +8,6 @@
 body {
   height: 100vh;
   background: url(../assets/bg/Background-01.jpg);
-  /* background-color: aqua; */
   background-repeat: repeat-x;
   background-size: contain;
 }
@@ -22,7 +21,7 @@ body {
 }
 
 .signup .container .card {
-  padding: 40px 50px 40px 50px;
+  padding: 40px 50px 10px 50px;
   background-color: #A6B1E1;
   border-radius: 16px;
 }
