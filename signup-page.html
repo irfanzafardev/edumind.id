@@ -39,11 +39,25 @@
                   </div>
                   <div class="input-data mb-2">
                     <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="input-group mb-3">
+                      <input id="password-field" type="password" class="form-control">
+                      <div class="input-group-prepend">
+                          <button class="btn rounded-0 btn-light" type="button">
+                              <h6 toggle="#password-field" class="fa fa-eye show-hide"></h6>
+                          </button>
+                      </div>
+                    </div>
                   </div>
                   <div class="input-data mb-3">
                     <label for="exampleInputPassword1" class="form-label">Konfirmasi Kata Sandi</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="input-group mb-3">
+                      <input id="password-field" type="password" class="form-control">
+                      <div class="input-group-prepend">
+                          <button class="btn rounded-0 btn-light" type="button">
+                              <h6 toggle="#password-field" class="fa fa-eye show-hide"></h6>
+                          </button>
+                      </div>
+                    </div>
                   </div>
                   <div class="action-btn text-center">
                     <a type="submit" href="signup.html" class="btn btn-signup">
@@ -90,8 +104,23 @@
     <!-- End of Copyright -->
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
     <!-- FontAwesome JS -->
     <script src="https://kit.fontawesome.com/b3b03a4327.js" crossorigin="anonymous"></script>
+    <script>
+      $(".show-hide").click(function () {
+
+          $(this).toggleClass("fa-eye fa-eye-slash");
+          var input = $($(this).attr("toggle"));
+          if (input.attr("type") == "password") {
+              input.attr("type", "text");
+          } else {
+              input.attr("type", "password");
+          }
+      });
+  </script>
   </body>
 </html>

@@ -48,6 +48,11 @@ body {
   color: #424874;
 }
 
+.login .container .card .card-body .form-control {
+  background-color: #F9FAFB;
+  border-radius: 0;
+}
+
 .login .container .card .card-body .form-check label {
   font-family: Poppins;
   font-size: 14px;

@@ -115,12 +115,14 @@ img {
 .header .vector-below {
   position: absolute;
   bottom: 140px;
+  z-index: -1;
 }
 
 .header .vector-above {
   position: absolute;
   right: -8px;
   top: 60px;
+  z-index: -1;
 }
 
 .header .header-text {
@@ -131,6 +133,15 @@ img {
 .header .header-text .text {
   color: #424874;
   padding: 0 180px 0 0;
+}
+
+
+@media (max-width: 767px) {
+  .header .header-text .text
+    {
+      color: #424874;
+      padding: 0 30px;
+    }
 }
 
 .header .header-text .text h4 {
@@ -147,7 +158,6 @@ img {
 .header .header-text .text img {
   margin: 0 0 10px -5px;
 }
-
 
 .header .header-text .text p {
   font-family: Poppins;

@@ -40,8 +40,16 @@ body {
 }
 
 .signup .container .card .card-body .input-data input {
-  background-color: #F4EEFF;
+  background-color: #F9FAFB;
   height: 30px;
+  border-radius: 0;
+}
+
+.signup .container .card .card-body .input-data button {
+  background-color: #F9FAFB;
+  width: 40px;
+  height: 30px;
+  padding: 3px 4px 0 0;
 }
 
 .signup .container .card .card-body .form-label {
