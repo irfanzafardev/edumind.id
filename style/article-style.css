@@ -144,6 +144,18 @@ img {
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .header .header-text .text h1 {
+    font-family: "Conthrax";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 144px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
 .header .header-text .text h4 {
   font-family: Conthrax;
   font-size: 45px;
@@ -152,6 +164,18 @@ img {
   line-height: 86px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .header .header-text .text h4 {
+    font-family: Conthrax;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 86px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 }
 
 .header .header-text .text img {
@@ -203,9 +227,10 @@ img {
 .article .container .article-categories .category-item a {
   background-color: #A6B1E1;
   padding: 8px 48px;
+  margin: 0 0 10px 0;
   border-radius: 12px;
+  width: 160px;
 }
-
 
 .article .container .article-cards .card  {
   background-color: #DCD6F7;
