@@ -302,43 +302,6 @@ body {
 
 /* FAQ */
 
-.faq {
-  background-color: #DCD6F7;
-  margin: 60px 0 0 0;
-}
-
-.faq .container {
-  padding: 50px 30px 30px 30px;
-}
-
-.faq .container img {
-  margin: 0;
-}
-
-.faq .container .question-col {
-  padding: 0 0 0 20px;
-  margin: -20px 0 0 0;
-}
-
-.faq .container h2 {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 77px;
-  letter-spacing: 0.05em;
-  text-align: left;
-  color: #424874;
-}
-
-.faq .container p {
-  font-size: 16px;
-  font-weight: 500;
-  text-align: justified;
-  color: #424874;
-}
-/* End of FAQ */
-
-/* FAQ */
-
 .faq-dropdown {
   background-color: #DCD6F7;
   margin: 60px 0 0 0;
@@ -383,6 +346,14 @@ body {
 .accordion .accordion-item .accordion-body {
   background-color: #DCD6F7;
   color: #424874;
+}
+
+@media (max-width: 767px) {
+  .faq-dropdown {
+    background-color: #DCD6F7;
+    margin: 60px 0 0 0;
+    height: fit-content;
+  }
 }
 
 /* End of FAQ */
@@ -448,7 +419,7 @@ body {
 
 .testimonial-article .container .swiper {
   background-color: transparent;
-  padding: 20px 0;
+  padding: 20px 0 20px 30px;
 }
 
 .testimonial-article .container .swiper .swiper-wrapper .card  {
