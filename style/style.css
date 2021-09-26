@@ -199,9 +199,7 @@ body {
 
 @media (max-width: 767px) {
   .header .vector-below {
-    position: absolute;
-    bottom: 120px;
-    z-index: -1;
+    display: none;
   }
 }
 /* End of Header */
