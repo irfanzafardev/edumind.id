@@ -26,13 +26,12 @@
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="assets/ic/logo-horizontal.png" width="120px" alt="EduMind-Logo">
+        <img src="assets/ic/logo-horizontal.png" width="120px" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i title="" class="fa fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id=" navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
@@ -50,7 +49,7 @@
             <a class="nav-link" href="article-page.html">Artikel</a>
           </li>
           <li class="nav-item log-in">
-            <a class="nav-link text-black fw-bold" style="background-color: #A6B1E1;" href="login-page.html">Masuk</a>
+            <a class="nav-link text-center text-black fw-bold" href="login-page.html">Masuk</a>
           </li>
         </ul>
         <div class="box-container">
@@ -58,7 +57,7 @@
             <tr>
               <td>
                 <form action="">
-                  <input type="text" placeholder="Cari.." class="search">
+                  <input type="text" placeholder="Cari.." class="search">                    
                 </form>
               </td>
               <td>
@@ -68,8 +67,8 @@
               </td>
             </tr>
           </table>
-        </div>
-      </div>
+        </div>   
+      </div>    
     </div>
   </nav>
   <!-- End of Navigation Bar -->
@@ -252,40 +251,50 @@
   <!-- End of Our Features -->
 
   <!-- FAQ -->
-  <section class="faq">
+  <section class="faq-dropdown">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="d-flex justify-content-end">
+        <div class="col-12 col-lg-6 d-none d-lg-block">
+          <div class="d-flex justify-content-end align-self-lg-center">
             <img class="img-fluid" src="./assets/illustration/ill-4.png" alt="illustration" width="450px">
           </div>
         </div>
         <div class="col-12 col-lg-6">
           <div class="question-col">
-            <h2>Pertanyaan</h2>
+            <h2 class="title">Frequently Asked Questions</h2>
             <div class="quetion-list">
-              <ul class="m-0 p-0">
-                <li class="text-decoration-none list-unstyled">
-                  <p class="my-1">accordion dropdown</p>
-                  <hr class="my-2">
-                </li>
-                <li class="text-decoration-none list-unstyled">
-                  <p class="my-1">accordion dropdown</p>
-                  <hr class="my-2">
-                </li>
-                <li class="text-decoration-none list-unstyled">
-                  <p class="my-1">accordion dropdown</p>
-                  <hr class="my-2">
-                </li>
-                <li class="text-decoration-none list-unstyled">
-                  <p class="my-1">accordion dropdown</p>
-                  <hr class="my-2">
-                </li>
-                <li class="text-decoration-none list-unstyled">
-                  <p class="my-1">accordion dropdown</p>
-                  <hr class="my-2">
-                </li>
-              </ul>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Bagaimana cara mengikuti webinar, workshop, dan kursus di Edumind?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Bagaimana cara daftar di Edumind?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Bagaimana cara mengunggah program di Edumind?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

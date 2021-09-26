@@ -227,7 +227,6 @@ img {
 }
 
 .article-body .container .article-text .article-text-paragraph {
-   
   font-size: 16px;
   font-weight: 600;
   line-height: 36px;
@@ -278,6 +277,18 @@ img {
   background-color: transparent;
   padding: 16px 0 1px 0;
   border-bottom: #262626 1px solid;
+}
+
+@media (max-width: 767px) {
+  .article-comment .article-comment-display .comment-text p, .article-comment .article-comment-display .comment-info span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-comment .article-comment-display .comment-info .report a {
+    width: 30px;
+  }
 }
 
 .article-comment .article-comment-display button {

@@ -16,7 +16,7 @@ body {
 
 .navbar {
   background-color: #424874;
-  max-height: 57px;
+  /* max-height: 57px; */
 }
 
 .navbar .icon-logo {
@@ -29,6 +29,7 @@ body {
 
 .navbar-nav {
   margin-top: 5px;
+  /* max-height: 36px; */
 }
 
 .nav-item {
@@ -36,10 +37,9 @@ body {
   font-weight: 400;
 }
 
-.nav-item .active {
+/* .nav-item .active {
   border-bottom: #fff 2px solid;
-  /* border-top: #fff 2px solid; */
-}
+} */
 
 .nav-item a {
   color: #fff;
@@ -49,13 +49,11 @@ body {
 .nav-item:not(:last-child) a:hover {
   color: #fff;
   font-size: 14px;
-  border-bottom: #fff 2px solid;
-  /* border-top: #fff 2px solid; */
+
 }
 
 .log-in a {
   border-radius: 10px;
-  background-color: #A6B1E1;
 }
 
 .box-container {
@@ -94,37 +92,21 @@ body {
   font-size: 12px;
 }
 
+img {
+  margin: -3px 8px 0 0;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse
+    {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 0 0 10px 10px;
+    }
+}
+
 .fa-bars {
   color: #fff !important;
 }
-
-@media (max-width: 767px) {
-  .navbar-collapse {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 0 0 10px 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .log-in a {
-    border-radius: 10px;
-    background-color: #A6B1E1;
-    width: 64px;
-  }
-}
-
-@media (max-width: 767px) {
-  .box-container {
-    margin-top: 10px;
-    position: relative;
-    width: 200px;
-    height: 30px;
-    border: 2px solid #fff;
-    border-radius: 50px;
-  }
-}
-
-
 /* End of Navbar */
 
 /* Header */
@@ -171,7 +153,7 @@ body {
 .header .header-text .text h4 {
   margin: 0;
   font-size: 26px;
-
+  
   font-weight: 600;
   line-height: 50px;
   letter-spacing: 0em;
@@ -185,7 +167,7 @@ body {
 
 .header .header-text .text p {
   font-size: 16px;
-
+  
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -235,9 +217,9 @@ body {
 }
 
 .TwoWQuestions .container .text-what h4, .TwoWQuestions .container .text-why h4 {
-
+   
   font-size: 30px;
-
+  
   font-weight: 600;
   line-height: 54px;
   letter-spacing: 0em;
@@ -245,9 +227,9 @@ body {
 }
 
 .TwoWQuestions .container .text-what p, .TwoWQuestions .container .text-why p {
-
+   
   font-size: 16px;
-
+  
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 0em;
@@ -277,7 +259,7 @@ body {
 
 .our-features .our-features-cards .card .card-body h5 {
   font-size: 20px;
-
+  
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -287,7 +269,7 @@ body {
 
 .our-features .our-features-cards .card .card-body a {
   font-size: 16px;
-
+  
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -646,7 +628,7 @@ footer {
   background-color: #424874;
 }
 
-footer h4 {
+footer h4 { 
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
@@ -659,7 +641,7 @@ footer .footer-text {
   text-align: justified;
 }
 
-footer .footer-text p {
+footer .footer-text p { 
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
@@ -668,7 +650,7 @@ footer .footer-text p {
   text-justify: inter-word;
 }
 
-footer .footer-text a {
+footer .footer-text a { 
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
@@ -680,7 +662,7 @@ footer .social-item {
   margin: 0 0 10px 0;
 }
 
-footer .social-item a {
+footer .social-item a { 
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
@@ -694,7 +676,7 @@ footer .contact-item {
   margin: 0 0 10px 0;
 }
 
-footer .contact-item a {
+footer .contact-item a { 
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;

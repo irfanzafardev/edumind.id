@@ -28,7 +28,7 @@ body {
 
 .navbar-nav {
   margin-top: 5px;
-  max-height: 36px;
+  /* max-height: 36px; */
 }
 
 .nav-item {
@@ -38,7 +38,7 @@ body {
 
 .nav-item .active {
   border-bottom: #fff 2px solid;
-  border-top: #fff 2px solid;
+  /* border-top: #fff 2px solid; */
 }
 
 .nav-item a {
@@ -47,7 +47,7 @@ body {
   font-size: 14px;
 }
 
-.nav-item a:hover {
+.nav-item:not(:last-child) a:hover {
   font-family: 'Poppins', Helvetica, serif;
   color: #fff;
   font-size: 14px;
