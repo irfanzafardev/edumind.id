@@ -8,6 +8,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style/article-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>EduMind - Article</title>
     
   </head>
@@ -24,10 +30,10 @@
         <div class="collapse navbar-collapse" " id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+              <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="profile-page.html">Profil</a>
+              <a class="nav-link" href="profile-sejarah-page.html">Profil</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="program-page.html">Program</a>
@@ -36,7 +42,7 @@
               <a class="nav-link" href="discuss-page.html">Diskusi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="article-page.html">Artikel</a>
+              <a class="nav-link active" href="article-page.html">Artikel</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle pt-1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -102,34 +108,34 @@
     <!-- Article -->
     <section class="article">
       <div class="container mt-3">
-        <div class="d-flex justify-content-center">
-          <div class="article-categories d-inline-block d-lg-inline-flex" style="max-width: 1140px;">
-            <div class="category-item mx-3">
+        <div class="article-categories mt-5">
+          <div class="row slider">
+            <div class="category-item d-flex justify-content-center">
               <a type="submit" href="#" class="btn btn-category-active text-white">
                 Semua
               </a>
             </div>
-            <div class="category-item mx-3">
+            <div class="category-item d-flex justify-content-center">
               <a type="submit" href="#" class="btn btn-category text-white">
                 Kategori
               </a>
             </div>
-            <div class="category-item mx-3">
+            <div class="category-item d-flex justify-content-center">
               <a type="submit" href="#" class="btn btn-category text-white">
                 Kategori
               </a>
             </div>
-            <div class="category-item mx-3">
+            <div class="category-item d-flex justify-content-center">
               <a type="submit" href="#" class="btn btn-category text-white">
                 Kategori
               </a>
             </div>
-            <div class="category-item mx-3">
+            <div class="category-item d-flex justify-content-center">
               <a type="submit" href="#" class="btn btn-category text-white">
                 Kategori
               </a>
             </div>
-            <div class="category-item mx-3">
+            <div class="category-item d-flex justify-content-center">
               <a type="submit" href="#" class="btn btn-category text-white">
                 Kategori
               </a>
@@ -250,5 +256,57 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <!-- FontAwesome JS -->
     <script src="https://kit.fontawesome.com/b3b03a4327.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      $('.slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 1200,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: '<span class="prev-arrow"><i class="fas fa-chevron-left"></i></span>',
+        nextArrow: '<span class="next-arrow"><i class="fas fa-chevron-right"></i></span>',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    </script>
   </body>
 </html>

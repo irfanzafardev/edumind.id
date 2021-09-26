@@ -38,7 +38,7 @@
                     <input type="text" class="form-control" id="exampleInputName">
                   </div>
                   <div class="input-data mb-2">
-                    <label for="exampleInputPassword1" class="form-label">Kata Sandi</label>
+                    <label for="InputPassword1" class="form-label">Kata Sandi</label>
                     <div class="input-group mb-3">
                       <input id="password-field" type="password" class="form-control">
                       <div class="input-group-prepend">
@@ -49,13 +49,13 @@
                     </div>
                   </div>
                   <div class="input-data mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Konfirmasi Kata Sandi</label>
+                    <label for="InputPassword2" class="form-label">Konfirmasi Kata Sandi</label>
                     <div class="input-group mb-3">
-                      <input id="password-field" type="password" class="form-control">
+                      <input id="password-confirm" type="Password" class="form-control">
                       <div class="input-group-prepend">
-                          <button class="btn rounded-0 btn-light" type="button">
-                              <h6 toggle="#password-field" class="fa fa-eye show-hide"></h6>
-                          </button>
+                        <button class="btn rounded-0 btn-light" type="button">
+                          <i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -122,5 +122,20 @@
           }
       });
   </script>
+  <script>
+		var state= false;
+		function toggle(){
+			if(state){
+				document.getElementById("password-confirm").setAttribute("type","password");
+				document.getElementById("eye").setAttribute("class","fa fa-eye");
+				state = false;
+			}
+			else{
+				document.getElementById("password-confirm").setAttribute("type","text");
+        document.getElementById("eye").setAttribute("class","fa fa-eye-slash");
+				state = true;
+			}
+		}
+	</script>
   </body>
 </html>
