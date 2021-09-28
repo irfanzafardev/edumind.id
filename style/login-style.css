@@ -6,9 +6,8 @@
 }
 
 body {
-  height: 100vh;
   background: url(../assets/bg/Background-01.jpg);
-  background-repeat: repeat-x;
+  background-repeat: repeat-y;
   background-size: contain;
 }
 
