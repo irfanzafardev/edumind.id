@@ -144,9 +144,8 @@ img {
 }
 
 .header .header-text .text h1 {
-  font-family: "Conthrax";
+  font-family: "Conthrax", Helvetica, sans-serif;
   font-size: 80px;
-  
   font-weight: 600;
   line-height: 144px;
   letter-spacing: 0em;
@@ -154,9 +153,8 @@ img {
 }
 
 .header .header-text .text h4 {
-  font-family: Conthrax;
+  font-family: "Conthrax", Helvetica, sans-serif;
   font-size: 45px;
-  
   font-weight: 600;
   line-height: 86px;
   letter-spacing: 0em;
@@ -169,9 +167,7 @@ img {
 
 
 .header .header-text .text p {
-   
   font-size: 16px;
-  
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -187,7 +183,7 @@ img {
 
 @media (max-width: 767px) {
   .header .header-text .text h1 {
-    font-family: "Conthrax";
+    font-family: "Conthrax", Helvetica, sans-serif;
     font-size: 50px;
     font-weight: 600;
     line-height: 144px;
@@ -198,7 +194,7 @@ img {
 
 @media (max-width: 767px) {
   .header .header-text .text h4 {
-    font-family: "Conthrax";
+    font-family: "Conthrax", Helvetica, sans-serif;
     font-size: 35px;
     font-weight: 600;
     line-height: 86px;
