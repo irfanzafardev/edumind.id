@@ -137,7 +137,7 @@ body {
 
 .header .vector-above {
   position: absolute;
-  right: -8px;
+  right: 0px;
   top: 50px;
   z-index: -1;
 }
