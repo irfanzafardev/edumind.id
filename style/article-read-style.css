@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url(../assets/bg/Background-01.jpg);
+  background: #fff;
   background-repeat: repeat-y;
   background-size: contain;
 }
@@ -117,6 +117,8 @@ img {
 /* Header */
 
 .header {
+  background: url(../assets/bg/Background-01.jpg);
+  background-size: cover;
   margin: 60px 0 0 0;
   height: 60vh;
   background-color: transparent;

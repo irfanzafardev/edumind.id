@@ -62,7 +62,7 @@
               </td>
               <td>
                 <a href="#">
-                  <img src="assets/ic/search-white.png" width="14px" alt="search">
+                  <img class="search-img" src="assets/ic/search-white.png" width="14px" alt="search">
                 </a>
               </td>
             </tr>
@@ -385,10 +385,34 @@
       <!-- Swiper -->
       <div class="swiper mySwiper mt-5">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card" style="width: 650px; min-height: 380px;">
+          <div class="swiper-slide d-flex justify-content-center">
+            <div class="card">
               <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="150px">
+                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="120px">
+              </div>
+              <div class="card-body text-center p-4">
+                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
+                <h5 class="card-title">- yung</h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide d-flex justify-content-center">
+            <div class="card">
+              <div class="card-img d-flex justify-content-center py-4">
+                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="120px">
+              </div>
+              <div class="card-body text-center p-4">
+                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
+                <h5 class="card-title">- Bram</h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide d-flex justify-content-center">
+            <div class="card">
+              <div class="card-img d-flex justify-content-center py-4">
+                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="120px">
               </div>
               <div class="card-body text-center p-4">
                 <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -397,63 +421,15 @@
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="card" style="width: 650px; min-height: 380px;">
+          <div class="swiper-slide d-flex justify-content-center">
+            <div class="card">
               <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="150px">
+                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="120px">
               </div>
               <div class="card-body text-center p-4">
                 <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                   sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- yung Bram</h5>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card" style="width: 650px; min-height: 380px;">
-              <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="150px">
-              </div>
-              <div class="card-body text-center p-4">
-                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- yung Bram</h5>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card" style="width: 650px; min-height: 380px;">
-              <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="150px">
-              </div>
-              <div class="card-body text-center p-4">
-                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- yung Bram</h5>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card" style="width: 650px; min-height: 380px;">
-              <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="150px">
-              </div>
-              <div class="card-body text-center p-4">
-                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- yung Bram</h5>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card" style="width: 650px; min-height: 380px;">
-              <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile" width="150px">
-              </div>
-              <div class="card-body text-center p-4">
-                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- yung Bram</h5>
+                <h5 class="card-title">- Bram yung</h5>
               </div>
             </div>
           </div>
@@ -630,13 +606,13 @@
       effect: "coverflow",
       grabCursor: true,
       centeredSlides: true,
-      slidesPerView: "2",
+      slidesPerView: "1",
       coverflowEffect: {
         rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2,
-        slideShadows: false,
+        stretch: 90,
+        depth: 260,
+        modifier: 0,
+        slideShadows: true,
       },
       loop: true,
       breakpoints: {
@@ -664,8 +640,8 @@
           slidesPerView: "2",
           coverflowEffect: {
             rotate: 0,
-            stretch: 0,
-            depth: 100,
+            stretch: 90,
+            depth: 260,
             modifier: 2,
             slideShadows: false,
           },

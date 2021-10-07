@@ -74,7 +74,6 @@ body {
 
 .search {
   font-size: 18px;
-  letter-spacing: 0em;
   text-align: left;
   margin-left: 5px;
   border: none;
@@ -82,9 +81,13 @@ body {
   color: #fff;
   height: 100%;
   width: 100%;
-  padding: 0 0 0 5px;
+  padding: 0 0 0 10px;
   margin: -10px 0 0 5px;
   border-radius: 50px;
+}
+
+.search-img {
+  margin-right: 10px;
 }
 
 ::-webkit-input-placeholder {
@@ -423,10 +426,11 @@ body {
 
 .testimonial-article .container .swiper {
   background-color: transparent;
-  padding: 20px 0 20px 30px;
+  padding: 20px 0;
 }
 
 .testimonial-article .container .swiper .swiper-wrapper .card  {
+  width: 500px;
   background-color: #F4EEFF;
   box-shadow: 0px 0px 40px 0px #00000040;
   border-radius: 15px;
@@ -437,7 +441,7 @@ body {
 }
 
 .testimonial-article .container .swiper .swiper-wrapper .card .card-body p  {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 0em;
@@ -446,7 +450,7 @@ body {
 }
 
 .testimonial-article .container .swiper .swiper-wrapper .card .card-body h5  {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 0em;
