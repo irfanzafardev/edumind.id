@@ -231,16 +231,23 @@ img {
 /* End of Breadcrumb */
 
 
-/* Article Body */
-
+/* Discussion Body */
 .article-comment .article-comment-box {
   background-color: #747DAB;
   padding: 16px 16px 10px 16px ;
   border-radius: 10px;
 }
 
+.article-comment .article-comment-box h5 {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
 .article-comment .article-comment-box textarea {
-  height: 100px;
+  min-height: 160px;
   background-color: #DCD6F7;
 }
 

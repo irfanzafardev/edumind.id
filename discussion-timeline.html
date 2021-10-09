@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="style/article-read-style.css">
+  <link rel="stylesheet" href="style/disscussion-timeline-style.css">
   <title>EduMind - Article Read</title>
 
 </head>
@@ -120,12 +120,35 @@
           <div class="article-text">
             <div class="article-comment mt-4">
               <div class="article-comment-box">
+                <h5 class="py-1">Ajukan Pertanyaan</h5>
                 <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                  <label for="floatingTextarea">Komennya yg sopan ya adick-adick</label>
+                  <textarea class="form-control" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Nanyanya yg sopan ya adick-adick</label>
                 </div>
                 <div class="d-flex">
-                  <button type="submit" class="btn btn-primary ms-auto">Kirim</button>
+                  <div class="dropdown visibility mt-2">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      visibility
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">p</a></li>
+                      <li><a class="dropdown-item" href="#">p</a></li>
+                      <li><a class="dropdown-item" href="#">p</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown category mt-2 ms-2">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      category
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">q</a></li>
+                      <li><a class="dropdown-item" href="#">q</a></li>
+                      <li><a class="dropdown-item" href="#">q </a></li>
+                    </ul>
+                  </div>
+                  <button type="submit" class="btn  ms-auto">
+                    Tanyakan <span><img src="./assets/ic/send.png" width="20px"></span>
+                  </button>
                 </div>
               </div>
               <div class="article-comment-display mt-3">
@@ -155,8 +178,11 @@
                     <span>31</span>
                     <img class="me-0" src="./assets/ic/commment.png" alt="">
                   </div>
+                  <div class="comment d-inline mx-3 align-self-center">
+                    <span>Kategori</span>
+                  </div>
                   <div class="ms-auto">
-                    <button type="submit" class="btn btn-primary">Balas</button>
+                    <button type="submit" class="btn "><span><img src="./assets/ic/share.png" width="20px"></span> Bagikan</button>
                   </div>
                 </div>
               </div>
@@ -193,7 +219,7 @@
                 <h4>Judul artikel yang panjang lebih dari 2 baris</h4>
                 <div class="card-act d-flex justify-content-between mt-3 px-0 pb-3">
                   <span>Kategori</span>
-                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn ">Selengkapnya</a>
                 </div>
               </div>
               <div class="article-card p-3">
@@ -202,7 +228,7 @@
                 <h4>Judul artikel yang panjang lebih dari 2 baris</h4>
                 <div class="card-act d-flex justify-content-between mt-3 px-0 pb-3">
                   <span>Kategori</span>
-                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn ">Selengkapnya</a>
                 </div>
               </div>
               <div class="article-card p-3">
@@ -211,7 +237,7 @@
                 <h4>Judul artikel yang panjang lebih dari 2 baris</h4>
                 <div class="card-act d-flex justify-content-between mt-3 px-0 pb-3">
                   <span>Kategori</span>
-                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn ">Selengkapnya</a>
                 </div>
               </div>
             </div>

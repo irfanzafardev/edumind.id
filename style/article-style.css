@@ -231,107 +231,6 @@ img {
 /* End of Breadcrumb */
 
 /* Article */
-
-.article .container .article-heading {
-  border-style: none none solid none;
-  width: 350px;
-  color: #424874;
-}
-
-.article .container .slider {
-  background-color: transparent;
-  padding: 20px 0;
-}
-
-.article .container .article-heading h1 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 72px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #424874;
-}
-
-.article .container .article-cards .card  {
-  background-color: #F4EEFF;
-  box-shadow: 0px 4px 15px 0px #00000040;
-  border-radius: 12px;
-}
-
-.article .container .article-cards .card .card-img img  {
-  border-radius: 100%;
-}
-
-.article .container .article-cards .card .card-body .card-date {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #5A5A5A;
-
-}
-
-.article .container .article-cards .card .card-body .card-title  {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #262626;
-}
-
-.article .container .article-cards .card .card-body .card-act a {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  background-color: #747DAB;
-}
-
-.article .container .article-cards .card .card-body .card-act h5 {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin: 5px 0 0 0;
-}
-
-.prev-arrow {
-  background-color: #747DAB;
-  position: absolute;
-  bottom: 170px;
-  left: 1%;
-  color: #fff;
-  width: 40px;
-  height: 80px;
-  border-radius: 12px;
-  text-align: center;
-  line-height: 80px;
-  display: inline-block;
-  z-index: 1;
-}
-
-.next-arrow {
-  background-color: #747DAB;
-  position: absolute;
-  bottom: 170px;
-  right: 1%;
-  color: #fff;
-  width: 40px;
-  height: 80px;
-  border-radius: 12px;
-  text-align: center;
-  line-height: 80px;
-  display: inline-block;
-}
-
-/* End of Article */
-
-
-/* Article */
 .article .container .article-categories {
   background-color: transparent;
 }
@@ -351,7 +250,7 @@ img {
 .prev-arrow {
   background-color: transparent;
   position: absolute;
-  bottom: 10px;
+  bottom: -7px;
   left: 1%;
   color: #424874;
   width: 40px;
@@ -366,7 +265,7 @@ img {
 .next-arrow {
   background-color: transparent;
   position: absolute;
-  bottom: 10px;
+  bottom: -7px;
   right: 1%;
   color: #424874;
   width: 40px;
@@ -387,8 +286,8 @@ img {
   width: 318px;
   height: 185.5px;
   margin: 0;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .article .container .article-cards .card .card-body .card-date {
