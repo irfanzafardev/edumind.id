@@ -170,7 +170,6 @@ img {
   margin: 0 0 10px -5px;
 }
 
-
 .header .header-text .text p {
   font-size: 16px;
   font-weight: 600;
@@ -187,13 +186,8 @@ img {
 }
 
 @media (max-width: 767px) {
-  .header .header-text .text h1 {
-    font-family: "Conthrax", Helvetica, sans-serif;
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 144px;
-    letter-spacing: 0em;
-    text-align: left;
+  .header .header-text .text img {
+    width: 250px;
   }
 }
 
@@ -216,13 +210,24 @@ img {
   background-color: #424874;
 }
 
-.breadcrumb h5 {
+.breadcrumb-item {
   background-color: transparent;
   margin: 0 0 0 0;
   padding: 12px 0;
+  text-decoration: none;
+  list-style: none
+}
+
+.breadcrumb-item a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
 }
 /* End of Breadcrumb */
-
 
 /* Article Body */
 .article-body .container .article-text .article-text-paragraph {
@@ -231,30 +236,26 @@ img {
 }
 
 .article-body .container .article-text .article-text-title {
-   
   font-size: 42px;
-  
   font-weight: 600;
   line-height: 72px;
-  letter-spacing: 0em;
   color: #262626;
 }
 
 .article-body .container .article-text .article-text-info h5 {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 36px;
-  letter-spacing: 0em;
   color: #262626;
 }
 
 .article-body .container .article-text .article-text-paragraph {
   font-size: 16px;
-  font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 0em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .article-text-insight .like-comment .like {
@@ -336,9 +337,7 @@ img {
 }
 
 .article-category .article-heading h4 {
-   
   font-size: 18px;
-  
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0em;
@@ -348,9 +347,7 @@ img {
 
 .article-category .article-list ul li {
   padding: 5px 16px;
-   
   font-size: 16px;
-  
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 0em;
@@ -372,9 +369,7 @@ img {
 }
 
 .article-newest .article-heading h4 {
-   
   font-size: 18px;
-  
   font-weight: 600;
   line-height: 36px;
   letter-spacing: 0em;
@@ -383,9 +378,7 @@ img {
 }
 
 .article-newest .article-card p {
-   
   font-size: 14px;
-  
   font-weight: 500;
   line-height: 21px;
   letter-spacing: 0em;
@@ -393,9 +386,7 @@ img {
 }
 
 .article-newest .article-card h4 {
-   
   font-size: 20px;
-  
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
@@ -407,9 +398,7 @@ img {
 }
 
 .article-newest .card-act span {
-   
   font-size: 14px;
-  
   font-weight: 500;
   line-height: 21px;
   letter-spacing: 0em;
@@ -421,9 +410,7 @@ img {
   padding: 6px 20px 6px 20px;
   color: #fff;
   border-radius: 12px;
-   
   font-size: 14px;
-  
   font-weight: 500;
   text-align: center;
 }
@@ -442,9 +429,7 @@ img {
 }
 
 .tagline .container h3 {
-   
   font-size: 22px;
-  
   font-weight: 500;
   line-height: 54px;
   letter-spacing: 0em;
@@ -452,9 +437,7 @@ img {
 }
 
 .tagline .container h3 a {
-   
   font-size: 22px;
-  
   font-weight: 500;
   line-height: 54px;
   letter-spacing: 0em;
@@ -465,45 +448,35 @@ img {
 /* End of Tagline */
 
 /* Footer */
-
 footer {
   background-color: #424874;
 }
 
 footer h4 {
-   
   font-size: 22px;
-  
   font-weight: 400;
   line-height: 33px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
 footer .footer-text {
   padding: 0 30px 0 0 ;
-  text-align: justified;
+  text-align: justify;
 }
 
 footer .footer-text p {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: justify;
   text-justify: inter-word;
 }
 
 footer .footer-text a {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
 }
 
 footer .social-item {
@@ -511,13 +484,10 @@ footer .social-item {
 }
 
 footer .social-item a {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
   text-decoration: none;
   color: #fff;
 }
@@ -527,20 +497,16 @@ footer .contact-item {
 }
 
 footer .contact-item a {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
   text-decoration: none;
   color: #fff;
 }
 /* End of footer */
 
 /* Copyright */
-
 .copyright {
   background-color: #262626;
 }

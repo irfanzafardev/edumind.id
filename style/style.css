@@ -258,7 +258,7 @@ body {
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
 }
 /* End of 2W Questions */
 
@@ -345,7 +345,7 @@ body {
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
   color: #424874;
   padding: 14px 0;
 }
@@ -437,23 +437,21 @@ body {
 }
 
 .testimonial-article .container .swiper .swiper-wrapper .card .card-img img  {
-  border-radius: 100%;
+  border-radius: 50%;
+  width: 90px;
 }
 
 .testimonial-article .container .swiper .swiper-wrapper .card .card-body p  {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 36px;
-  letter-spacing: 0em;
+  line-height: 28px;
   text-align: center;
   color: #424874
 }
 
 .testimonial-article .container .swiper .swiper-wrapper .card .card-body h5  {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 36px;
-  letter-spacing: 0em;
   text-align: center;
   color: #424874
 }
@@ -623,11 +621,9 @@ body {
   line-height: 80px;
   display: inline-block;
 }
-
 /* End of Article */
 
 /* Footer */
-
 footer {
   background-color: #424874;
 }
@@ -642,14 +638,13 @@ footer h4 {
 
 footer .footer-text {
   padding: 0 30px 0 0 ;
-  text-align: justified;
+  text-align: justify;
 }
 
 footer .footer-text p {
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -658,8 +653,7 @@ footer .footer-text a {
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
 }
 
 footer .social-item {
@@ -670,8 +664,7 @@ footer .social-item a {
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
   text-decoration: none;
   color: #fff;
 }
@@ -684,15 +677,13 @@ footer .contact-item a {
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
   text-decoration: none;
   color: #fff;
 }
 /* End of footer */
 
 /* Copyright */
-
 .copyright {
   background-color: #262626;
 }

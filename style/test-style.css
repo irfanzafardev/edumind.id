@@ -233,7 +233,7 @@ img {
   font-weight: 500;
   line-height: 36px;
   letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
 }
 /* End of 2W Questions */
 
@@ -314,7 +314,7 @@ img {
 .faq .container p {
   font-size: 16px;
   font-weight: 500;
-  text-align: justified;
+  text-align: justify;
   color: #424874;
 }
 /* End of FAQ */
@@ -357,7 +357,7 @@ img {
   font-weight: 600;
   line-height: 30px;
   letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
   color: #424874;
   padding: 14px 0;
 }
@@ -638,7 +638,7 @@ footer h4 {
 
 footer .footer-text {
   padding: 0 30px 0 0 ;
-  text-align: justified;
+  text-align: justify;
 }
 
 footer .footer-text p { 
@@ -655,7 +655,7 @@ footer .footer-text a {
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
 }
 
 footer .social-item {
@@ -667,7 +667,7 @@ footer .social-item a {
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
   text-decoration: none;
   color: #fff;
 }
@@ -681,7 +681,7 @@ footer .contact-item a {
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
-  text-align: justified;
+  text-align: justify;
   text-decoration: none;
   color: #fff;
 }
