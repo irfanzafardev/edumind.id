@@ -49,6 +49,10 @@ body {
   font-size: 14px;
 }
 
+.nav-item a.show {
+  color: #fff;
+}
+
 .nav-item:not(:last-child) a:hover {
   font-family: 'Poppins', Helvetica, serif;
   color: #fff;
@@ -78,8 +82,8 @@ body {
 
 .search {
   font-size: 18px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
   margin-left: 5px;
   border: none;
   background-color: transparent;
@@ -152,8 +156,8 @@ img {
   font-size: 80px;
   font-weight: 600;
   line-height: 144px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
 }
 
 .header .header-text .text h4 {
@@ -162,8 +166,8 @@ img {
   font-size: 45px;
   font-weight: 600;
   line-height: 86px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
 }
 
 .header .header-text .text img {
@@ -175,7 +179,7 @@ img {
   font-size: 16px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
+
   text-align: justify;
   text-justify: inter-word;
 }
@@ -198,8 +202,8 @@ img {
     font-size: 35px;
     font-weight: 600;
     line-height: 86px;
-    letter-spacing: 0em;
-    text-align: left;
+  
+    
   }
 }
 
@@ -242,13 +246,13 @@ img {
   color: #fff;
   font-family: "Poppins";
   font-size: 18px;
-  font-style: normal;
+ 
   font-weight: 600;
 }
 
 .article-comment .article-comment-box textarea {
   min-height: 160px;
-  background-color: #DCD6F7;
+  background-color: #F4EEFF;
 }
 
 .article-comment .article-comment-box button {
@@ -256,8 +260,13 @@ img {
   margin: 10px 0 0 0 ;
 }
 
+.article-comment .article-comment-box .dropdown-toggle {
+  background-color: #F4EEFF;
+  margin: 10px 0 0 0 ;
+}
+
 .article-comment .article-comment-display {
-  background-color: #DCD6F7;
+  background-color: #F4EEFF;
   padding: 16px ;
   border-radius: 10px;
 }
@@ -279,14 +288,43 @@ img {
     width: 30px;
   }
 }
-
-.article-comment .article-comment-display button {
-  background-color: #A6B1E1;
-}
-
 /* End of Article Body */
 
 /* Article Sidebar */
+.article-category-alt {
+  background-color: transparent;
+}
+
+.article-category-alt .article-heading {
+  border-bottom: #000 solid 2px;
+  margin: 0 60px;
+}
+
+.article-category-alt .article-heading h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.article-category-alt .article-list ul li a {
+  text-decoration: none;
+  list-style: none;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
+  color: #000;
+}
+
+.article-category-alt .article-list ul li .active {
+  text-decoration: none;
+  list-style: none;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #000;
+}
 
 .article-category {
   background-color: #DCD6F7;
@@ -306,8 +344,8 @@ img {
   
   font-weight: 600;
   line-height: 36px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
   color: #fff;
 }
 
@@ -318,8 +356,8 @@ img {
   
   font-weight: 500;
   line-height: 36px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
   border-bottom: solid 1px black;
 
 }
@@ -342,8 +380,8 @@ img {
   
   font-weight: 600;
   line-height: 36px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
   color: #fff;
 }
 
@@ -353,8 +391,8 @@ img {
   
   font-weight: 500;
   line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;  
+
+    
 }
 
 .article-newest .article-card h4 {
@@ -363,8 +401,8 @@ img {
   
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
 }
 
 .article-newest .card-act {
@@ -377,8 +415,8 @@ img {
   
   font-weight: 500;
   line-height: 21px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
 }
 
 .article-newest .card-act a {
@@ -400,6 +438,8 @@ img {
 
 .tagline {
   background-color: #747DAB;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .tagline .container {
@@ -412,7 +452,7 @@ img {
   
   font-weight: 500;
   line-height: 54px;
-  letter-spacing: 0em;
+
   text-align: center;
 }
 
@@ -422,7 +462,7 @@ img {
   
   font-weight: 500;
   line-height: 54px;
-  letter-spacing: 0em;
+
   text-align: center;
   text-decoration: underline;
   color: #DCD6F7;
@@ -436,13 +476,9 @@ footer {
 }
 
 footer h4 {
-   
   font-size: 22px;
-  
   font-weight: 400;
   line-height: 33px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 footer .footer-text {
@@ -451,37 +487,23 @@ footer .footer-text {
 }
 
 footer .footer-text p {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: justify;
   text-justify: inter-word;
 }
 
-footer .footer-text a {
    
-  font-size: 16px;
-  
-  font-weight: 400;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: justify;
-}
 
 footer .social-item {
   margin: 0 0 10px 0;
 }
 
 footer .social-item a {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: justify;
   text-decoration: none;
   color: #fff;
@@ -492,12 +514,18 @@ footer .contact-item {
 }
 
 footer .contact-item a {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
+  text-align: justify;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .sitemap-item a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
   text-align: justify;
   text-decoration: none;
   color: #fff;

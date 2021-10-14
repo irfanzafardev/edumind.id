@@ -30,14 +30,33 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile-sejarah-page.html">Profil</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profile
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-black" href="profile-sejarah-page.html">Sejarah</a></li>
+              <li><a class="dropdown-item text-black" href="#">Tugas & Fungsi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-black" href="#">Infografis</a></li>
+              <li><a class="dropdown-item text-black" href="#">Struktur Organisasi</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="program-webinar.html">Program</a>
+            <a class="nav-link" href="event-page.html">Program</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="discussion-timeline.html">Diskusi</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Diskusi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-black" href="discussion-timeline.html">Timeline</a></li>
+              <li><a class="dropdown-item text-black" href="#">Jawaban</a></li>
+              <li><a class="dropdown-item text-black" href="#">Pertanyaan</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-black" href="#">Pertanyaan saya</a></li>
+              <li><a class="dropdown-item text-black" href="#">Jawaban saya</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="article-page.html">Artikel</a>
@@ -104,8 +123,8 @@
       <nav class="breadcrumb my-2" aria-label="breadcrumb">
         <ol class="list-group list-group-horizontal">
           <li class="breadcrumb-item"><a href="Link">Beranda</a></li>
-          <li class="breadcrumb-item"><a href="Link">Profie</a></li>
-          <li class="breadcrumb-item"><a href="Link">Sejarah</a></li>
+          <li class="breadcrumb-item"><a href="Link">Artikel</a></li>
+          <li class="breadcrumb-item"><a href="Link">Judul Artikel</a></li>
         </ol>
       </nav>
     </div>
@@ -113,10 +132,10 @@
   <!-- End of Breadcrumb -->
 
   <!-- Article Body -->
-  <section class="article-body">
+  <section class="article-body mt-4">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-9" s>
+        <div class="col-12 col-lg-9" style="padding-right: 30px;">
           <div class="article-text">
             <div class="article-text-title">
               <h1>Judul Article</h1>
@@ -153,13 +172,13 @@
                 </div>
                 <div class="comment d-inline mx-3">
                   <span>31</span>
-                  <img class="me-0" src="./assets/ic/commment.png" alt="">
+                  <img class="me-0" src="./assets/ic/commment.png">
                 </div>
                 <span>Kategori</span>
               </div>
               <div class="share mt-2">
                 <span>Bagikan</span>
-                <img src="./assets/ic/share.png" alt="">
+                <img src="./assets/ic/share.png" width="22px">
               </div>
             </div>
             
@@ -170,7 +189,10 @@
                   <label for="floatingTextarea">Komennya yg sopan ya adick-adick</label>
                 </div>
                 <div class="d-flex">
-                  <button type="submit" class="btn  ms-auto">Kirim</button>
+                  <a href="" type="submit" class="btn ms-auto">
+                    Kirim
+                    <span><img src="./assets/ic/upload-svg.svg" width="16px"></span>
+                  </a>
                 </div>
               </div>
               <div class="article-comment-display mt-3">
@@ -200,9 +222,9 @@
                     <span>31</span>
                     <img class="me-0" src="./assets/ic/commment.png" alt="">
                   </div>
-                  <div class="ms-auto">
+                  <!-- <div class="ms-auto">
                     <button type="submit" class="btn ">Balas</button>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
@@ -213,7 +235,10 @@
                     <label for="floatingTextarea">Balasnya yg sopan ya adick-adick</label>
                   </div>
                   <div class="d-flex">
-                    <button type="submit" class="btn  ms-auto">Kirim</button>
+                    <a href="" type="submit" class="btn ms-auto">
+                      Kirim
+                      <span><img src="./assets/ic/upload-svg.svg" width="16px"></span>
+                    </a>
                   </div>
                 </div>
                 <div class="article-comment-display mt-3">
@@ -243,9 +268,9 @@
                       <span>31</span>
                       <img class="me-0" src="./assets/ic/commment.png" alt="">
                     </div>
-                    <div class="ms-auto">
+                    <!-- <div class="ms-auto">
                       <button type="submit" class="btn ">Balas</button>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -255,7 +280,42 @@
 
         <!-- Article Sidebar -->
         <div class="col-12 col-lg-3 sidebar d-none d-lg-block">
-          <div class="article-category mb-4">
+          <div class="newest-article">
+            <div class="article-heading text-center">
+              <img src="./assets/ic/article-svg.svg" class="d-inline" width="18px">
+              <h4 class="d-inline">Kategori Artikel</h4>
+            </div>
+            <div class="article-list mt-4">
+              <div class="row article-item my-3">
+                <div class="col-6 article-img">
+                  <img class="img-fluid pt-3" src="./assets/ic/blank.png" alt="article-img" width="140px">
+                </div>
+                <div class="col-6">
+                  <p>31 Agustus 2021, Admin</p>
+                  <h4>Judul artikel yang panjang lebih dari 2 baris</h4>
+                </div>
+              </div>
+              <div class="row article-item my-3">
+                <div class="col-6 article-img">
+                  <img class="img-fluid pt-3" src="./assets/ic/blank.png" alt="article-img" width="140px">
+                </div>
+                <div class="col-6">
+                  <p>31 Agustus 2021, Admin</p>
+                  <h4>Judul artikel yang panjang lebih dari 2 baris</h4>
+                </div>
+              </div>
+              <div class="row article-item my-3">
+                <div class="col-6 article-img">
+                  <img class="img-fluid pt-3" src="./assets/ic/blank.png" alt="article-img" width="140px">
+                </div>
+                <div class="col-6">
+                  <p>31 Agustus 2021, Admin</p>
+                  <h4>Judul artikel yang panjang lebih dari 2 baris</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="article-category mb-4 d-none">
             <div class="article-heading">
               <img src="./assets/ic/category-article.png" class="d-inline" width="18px">
               <h4 class="d-inline">Kategori Artikel</h4>
@@ -270,7 +330,7 @@
               </ul>
             </div>
           </div>
-          <div class="article-newest mb-4">
+          <div class="article-newest mb-4 d-none">
             <div class="article-heading">
               <img src="./assets/ic/article.png" class="d-inline" width="18px">
               <h4 class="d-inline">Artikel Terkini</h4>
@@ -287,7 +347,7 @@
               </div>
             </div>
           </div>
-          <div class="article-category mb-4">
+          <div class="article-category mb-4 d-none">
             <div class="article-heading">
               <img src="./assets/ic/program.png" class="d-inline" width="18px">
               <h4 class="d-inline">Program</h4>
@@ -321,56 +381,55 @@
     <div class="container py-5">
       <div class="row text-white">
         <div class="col-6 col-lg-4">
-          <div class="footer-text">
-            <h4>Tentang Kami</h4>
-            <p>Edumind adalah sebuah situs untuk kumpulan event online seperti webinar, workshop, ataupun kursus dan
-              juga terdapat ruang untuk diskusi.</p>
+          <h4>Kontak</h4>
+          <div class="contact-list text-white">
+            <div class="contact-item">
+              <img src="./assets/ic/phone.png">
+              <a href="#">089632101841</a>
+            </div>
+            <div class="contact-item">
+              <img src="./assets/ic/whatsapp.png">
+              <a href="#">089632101841</a>
+            </div>
+            <div class="contact-item">
+              <img src="./assets/ic/telegram.png">
+              <a href="#">089632101841</a>
+            </div>
+            <div class="contact-item">
+              <img src="./assets/ic/email.png">
+              <a href="#">edumindindonedia@gmail.com</a>
+            </div>
           </div>
         </div>
         <div class="col-6 col-lg-2">
           <h4>Media Sosial</h4>
           <div class="social-list text-white">
             <div class="social-item">
-              <img src="./assets/ic/instagram.png" alt="">
+              <img src="./assets/ic/instagram.png">
               <a href="#">instagram</a>
             </div>
             <div class="social-item">
-              <img src="./assets/ic/facebook.png" alt="">
+              <img src="./assets/ic/facebook.png">
               <a href="#">facebook</a>
             </div>
             <div class="social-item">
-              <img src="./assets/ic/twitter.png" alt="">
+              <img src="./assets/ic/twitter.png">
               <a href="#">twitter</a>
             </div>
             <div class="social-item">
-              <img src="./assets/ic/web.png" alt="">
+              <img src="./assets/ic/web.png">
               <a href="#">web</a>
             </div>
           </div>
         </div>
         <div class="col-6 col-lg-4">
-          <h4>Kontak</h4>
-          <div class="contact-list text-white">
-            <div class="contact-item">
-              <img src="./assets/ic/phone.png" alt="">
-              <a href="#">089632101841</a>
-            </div>
-            <div class="contact-item">
-              <img src="./assets/ic/whatsapp.png" alt="">
-              <a href="#">089632101841</a>
-            </div>
-            <div class="contact-item">
-              <img src="./assets/ic/telegram.png" alt="">
-              <a href="#">089632101841</a>
-            </div>
-            <div class="contact-item">
-              <img src="./assets/ic/email.png" alt="">
-              <a href="#">edumindindonedia@gmail.com</a>
-            </div>
+          <h4>Sitemap</h4>
+          <div class="sitemap-item">
+            <a href="sitemap-page.html">sitemap</a>
           </div>
         </div>
         <div class="col-2">
-          <img src="./assets/ic/logo-vertical.png" alt="" width="120px">
+          <img src="./assets/ic/logo-vertical.png" alt="EduMind-Logo" width="120px" >
         </div>
       </div>
     </div>

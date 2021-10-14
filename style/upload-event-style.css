@@ -14,7 +14,6 @@ body {
 }
 
 /* Navigation Bar */
-
 .navbar {
   background-color: #424874;
   max-height: 57px;
@@ -49,6 +48,10 @@ body {
   font-size: 14px;
 }
 
+.nav-item a.show {
+  color: #fff;
+}
+
 .nav-item:not(:last-child) a:hover {
   font-family: 'Poppins', Helvetica, serif;
   color: #fff;
@@ -77,8 +80,8 @@ body {
 
 .search {
   font-size: 18px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
   margin-left: 5px;
   border: none;
   background-color: transparent;
@@ -114,7 +117,6 @@ img {
 /* End of Navbar */
 
 /* Header */
-
 .header {
   background: url(../assets/bg/Background-01.jpg);
   background-size: cover;
@@ -126,8 +128,8 @@ img {
 
 .header .vector-below {
   position: absolute;
-  bottom: 200px;
-  z-index: -1;
+  bottom: 230px;
+  z-index: 1;
 }
 
 .header .vector-above {
@@ -151,8 +153,6 @@ img {
   font-size: 80px;
   font-weight: 600;
   line-height: 144px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .header .header-text .text h4 {
@@ -161,22 +161,16 @@ img {
   font-size: 45px;
   font-weight: 600;
   line-height: 86px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .header .header-text .text img {
   margin: 0 0 10px -5px;
 }
 
-
 .header .header-text .text p {
-   
   font-size: 16px;
-  
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -199,14 +193,11 @@ img {
     font-size: 35px;
     font-weight: 600;
     line-height: 86px;
-    letter-spacing: 0em;
-    text-align: left;
   }
 }
 /* End of Header */
 
 /* Breadcrumb */
-
 .breadcrumb {
   background-color: #424874;
 }
@@ -230,165 +221,160 @@ img {
 }
 /* End of Breadcrumb */
 
-
-/* Webinar */
-
-.webinar .container .webinar-categories {
-  background-color: transparent;
-}
-
-.webinar .container .webinar-categories .btn-category-active {
-  background-color: #747DAB !important;
-}
-
-.webinar .container .webinar-categories .category-item a {
-  background-color: #A6B1E1;
-  padding: 8px 48px;
-  margin: 0 0 10px 0;
-  border-radius: 12px;
-  width: 160px;
-}
-
-.prev-arrow-category {
-  background-color: transparent;
-  position: absolute;
-  bottom: -10px;
-  left: 1%;
-  color: #424874;
-  width: 40px;
-  height: 80px;
-  border-radius: 12px;
-  text-align: center;
-  line-height: 80px;
-  display: inline-block;
-  z-index: 1;
-}
-
-.next-arrow-category {
-  background-color: transparent;
-  position: absolute;
-  bottom: -10px;
-  right: 1%;
-  color: #424874;
-  width: 40px;
-  height: 80px;
-  border-radius: 12px;
-  text-align: center;
-  line-height: 80px;
-  display: inline-block;
-}
-
-.webinar .container .webinar-heading {
+/* Event upload */
+.event-upload .container .event-upload-heading,
+.event-detail .container .event-detail-heading {
   border-style: none none solid none;
   width: 350px;
   color: #424874;
 }
 
-.webinar .container .webinar-heading h1 {
+.event-upload .container .event-upload-heading h1,
+.event-detail .container .event-detail-heading h1 {
   font-size: 32px;
   font-weight: 600;
   line-height: 72px;
-  letter-spacing: 0em;
   text-align: center;
   color: #424874;
 }
 
-.webinar .container .webinar-heading {
-  border-style: none none solid none;
-  width: 350px;
-  color: #424874;
-}
-
-.webinar .container .webinar-heading h1 {
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 72px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #424874;
-}
-
-.webinar .container .webinar-cards .card  {
+.event-upload .container .upload-card {
   background-color: #F4EEFF;
-  box-shadow: 0px 4px 15px 0px #00000040;
-  border-radius: 12px;
+  border-radius: 30px;
 }
 
-.webinar .container .webinar-cards .card .card-img img  {
-  border-radius: 100%;
-}
-
-.webinar .container .webinar-cards .card .card-body .card-date {
-  font-size: 14px;
+.event-upload .container .upload-card .card-heading h4 {
+  font-size: 20px;
   font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #5A5A5A;
-
+  line-height: 33px;
+  color: #424874;
+  border-bottom: #424874 2px solid;
+  margin: 0 240px;
 }
 
-.webinar .container .webinar-cards .card .card-body .card-title  {
+.event-upload .container .upload-card .card-heading-col-5 h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 33px;
+  color: #424874;
+  border-bottom: #424874 2px solid;
+  margin: 0 160px;
+}
+
+.event-upload .container .upload-card .form-heading {
   font-size: 16px;
   font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #262626;
+  line-height: 33px;
+  color: #424874;
 }
 
-.webinar .container .webinar-cards .card .card-body .card-act a {
+.event-upload .container .upload-card .btn-dropdown,
+.event-upload .container .upload-card .form-input-box {
+  padding: 0 10px;
+  min-height: 36px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.event-upload .container .upload-card .date-picker {
+  max-width: 120px;
+}
+
+.event-upload .container .upload-card .form-input-textarea {
+  min-height: 140px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn-upload {
+  width: 100%;
+  background-color: #A6B1E1;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn-uploaded {
+  width: 100%;
+  background-color: #DCD6F7;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.date .form-control {
+  width: 116px; 
+  margin: 0;
+  border: none;
+}
+
+.date span {
+  background-color: white;
+  border: none;
+}
+
+.date > span:hover {
+  cursor: pointer;
+}
+/* End of Event upload */
+
+/* Event detail */
+.event-detail .event-detail-body .event-desc h2 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 54px;
+  color: #424874;
+}
+
+.event-detail .event-detail-body .event-desc p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: justify;
+  color: #424874;
+}
+
+.event-detail .event-detail-body .event-desc .event-date {
+  background-color: #F4EEFF;
+  padding: 6px 10px;
+  border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
-  background-color: #747DAB;
+  line-height: 28px;
+  color: #424874;
 }
 
-.webinar .container .webinar-cards .card .card-body .card-act h5 {
+.event-detail .event-detail-body .event-desc .event-time {
+  background-color: #F4EEFF;
+  padding: 6px 10px;
+  border-radius: 20px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin: 5px 0 0 0;
+  line-height: 28px;
+  color: #424874;
 }
 
-.prev-arrow-webinar {
-  background-color: #5A5A5A;
-  position: absolute;
-  bottom: 170px;
-  left: 1%;
-  color: #fff;
-  width: 40px;
-  height: 80px;
-  border-radius: 12px;
-  text-align: center;
-  line-height: 80px;
-  display: inline-block;
-  z-index: 1;
+.event-detail .event-detail-body .event-desc-list .event-desc-item h5,
+.event-detail .event-detail-body .event-desc-list .event-desc-item span {
+  color: #424874;
 }
 
-.next-arrow-webinar {
-  background-color: #5A5A5A;
-  position: absolute;
-  bottom: 170px;
-  right: 1%;
-  color: #fff;
-  width: 40px;
-  height: 80px;
-  border-radius: 12px;
-  text-align: center;
-  line-height: 80px;
-  display: inline-block;
-}
-/* End of webinar */
+
+
+
+
+/* End of Event detail */
+
 
 /* Tagline */
-
 .tagline {
   background-color: #747DAB;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .tagline .container {
@@ -396,22 +382,16 @@ img {
 }
 
 .tagline .container h3 {
-   
   font-size: 22px;
-  
   font-weight: 500;
   line-height: 54px;
-  letter-spacing: 0em;
   text-align: center;
 }
 
 .tagline .container h3 a {
-   
   font-size: 22px;
-  
   font-weight: 500;
   line-height: 54px;
-  letter-spacing: 0em;
   text-align: center;
   text-decoration: underline;
   color: #DCD6F7;
@@ -419,19 +399,15 @@ img {
 /* End of Tagline */
 
 /* Footer */
-
 footer {
   background-color: #424874;
 }
 
 footer h4 {
-   
   font-size: 22px;
-  
   font-weight: 400;
   line-height: 33px;
-  letter-spacing: 0em;
-  text-align: left;
+  
 }
 
 footer .footer-text {
@@ -440,37 +416,23 @@ footer .footer-text {
 }
 
 footer .footer-text p {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: justify;
   text-justify: inter-word;
 }
 
-footer .footer-text a {
    
-  font-size: 16px;
-  
-  font-weight: 400;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: justify;
-}
 
 footer .social-item {
   margin: 0 0 10px 0;
 }
 
 footer .social-item a {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: justify;
   text-decoration: none;
   color: #fff;
@@ -481,12 +443,18 @@ footer .contact-item {
 }
 
 footer .contact-item a {
-   
   font-size: 16px;
-  
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
+  text-align: justify;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .sitemap-item a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
   text-align: justify;
   text-decoration: none;
   color: #fff;
@@ -494,7 +462,6 @@ footer .contact-item a {
 /* End of footer */
 
 /* Copyright */
-
 .copyright {
   background-color: #262626;
 }

@@ -37,12 +37,15 @@ body {
 
 .nav-item .active {
   border-bottom: #fff 2px solid;
-  /* border-top: #fff 2px solid; */
 }
 
 .nav-item a {
   color: #fff;
   font-size: 14px;
+}
+
+.nav-item a.show {
+  color: #fff;
 }
 
 .nav-item:not(:last-child) a:hover {
@@ -74,7 +77,7 @@ body {
 
 .search {
   font-size: 18px;
-  text-align: left;
+  
   margin-left: 5px;
   border: none;
   background-color: transparent;
@@ -125,12 +128,9 @@ body {
     border-radius: 50px;
   }
 }
-
-
 /* End of Navbar */
 
 /* Header */
-
 .header {
   background: url(../assets/bg/Background-01.jpg);
   background-size: cover;
@@ -165,24 +165,19 @@ body {
 .header .header-text .text h4 {
   margin: 0;
   font-size: 26px;
-
   font-weight: 600;
   line-height: 50px;
-  letter-spacing: 0em;
-  text-align: left;
+  
 }
 
 .header .header-text .text img {
   margin: 0 0 10px -5px;
 }
 
-
 .header .header-text .text p {
   font-size: 16px;
-
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -208,9 +203,10 @@ body {
 /* End of Header */
 
 /* Statistic */
-
 .statistic {
   background-color: #747DAB;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .statistic .statistic-row {
@@ -230,7 +226,6 @@ body {
 /* End of Statistic */
 
 /* 2W Questions */
-
 .TwoWQuestions .container {
   background-color: #DCD6F7;
   border-radius: 36px;
@@ -242,28 +237,20 @@ body {
 }
 
 .TwoWQuestions .container .text-what h4, .TwoWQuestions .container .text-why h4 {
-
   font-size: 30px;
-
   font-weight: 600;
   line-height: 54px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .TwoWQuestions .container .text-what p, .TwoWQuestions .container .text-why p {
-
   font-size: 16px;
-
   font-weight: 500;
   line-height: 36px;
-  letter-spacing: 0em;
   text-align: justify;
 }
 /* End of 2W Questions */
 
 /* Our-features */
-
 .our-features {
   background-color: #747DAB;
   /* max-height: 420px; */
@@ -281,24 +268,17 @@ body {
   border-radius: 14px;
 }
 
-
 .our-features .our-features-cards .card .card-body h5 {
   font-size: 20px;
-
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #424874;
 }
 
 .our-features .our-features-cards .card .card-body a {
   font-size: 16px;
-
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #747DAB;
 }
 
@@ -308,7 +288,6 @@ body {
 /* End of Our-features */
 
 /* FAQ */
-
 .faq-dropdown {
   background-color: #DCD6F7;
   margin: 60px 0 0 0;
@@ -321,7 +300,7 @@ body {
 
 .faq-dropdown .container img {
   margin: 0;
-} *
+} 
 
 .faq-dropdown .container .question-col {
   padding: 0 0 0 20px;
@@ -333,7 +312,6 @@ body {
   font-weight: 600;
   line-height: 77px;
   letter-spacing: 0.05em;
-  text-align: left;
   color: #424874;
 }
 
@@ -341,10 +319,8 @@ body {
   background-color: #DCD6F7;
   border-bottom: #262626 solid 1px;
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
   text-align: justify;
   color: #424874;
   padding: 14px 0;
@@ -362,13 +338,13 @@ body {
     height: fit-content;
   }
 }
-
 /* End of FAQ */
 
-/* Tagline */
-
+/* Tagline-top */
 .tagline {
   background-color: #747DAB;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .tagline .container {
@@ -379,7 +355,6 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 54px;
-  letter-spacing: 0em;
   text-align: center;
 }
 
@@ -387,7 +362,32 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 54px;
-  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: underline;
+  color: #DCD6F7;
+}
+/* End of Tagline-top */
+
+/* Tagline */
+.tagline-top {
+  background-color: #747DAB;
+}
+
+.tagline-top .container {
+  padding: 10px;
+}
+
+.tagline-top .container h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 54px;
+  text-align: center;
+}
+
+.tagline-top .container h3 a {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 54px;
   text-align: center;
   text-decoration: underline;
   color: #DCD6F7;
@@ -395,7 +395,6 @@ body {
 /* End of Tagline */
 
 /* Testimonial */
-
 .testimonial-article .container .testimonial-heading {
   border-style: none none solid none;
   width: 350px;
@@ -406,13 +405,13 @@ body {
   font-size: 32px;
   font-weight: 600;
   line-height: 72px;
-  letter-spacing: 0em;
   text-align: center;
   color: #424874;
 }
 
 .swiper {
   width: 100%;
+  height: 420px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -430,7 +429,7 @@ body {
 }
 
 .testimonial-article .container .swiper .swiper-wrapper .card  {
-  width: 500px;
+  width: 560px;
   background-color: #F4EEFF;
   box-shadow: 0px 0px 40px 0px #00000040;
   border-radius: 15px;
@@ -470,7 +469,6 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 36px;
-  letter-spacing: 0em;
   text-align: center;
   color: #424874
 }
@@ -479,7 +477,6 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 36px;
-  letter-spacing: 0em;
   text-align: center;
   color: #424874
 }
@@ -506,7 +503,6 @@ body {
     font-size: 12px;
     font-weight: 500;
     line-height: 36px;
-    letter-spacing: 0em;
     text-align: center;
     color: #424874
   }
@@ -517,7 +513,6 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 36px;
-    letter-spacing: 0em;
     text-align: center;
     color: #424874
   }
@@ -541,7 +536,6 @@ body {
   font-size: 32px;
   font-weight: 600;
   line-height: 72px;
-  letter-spacing: 0em;
   text-align: center;
   color: #424874;
 }
@@ -560,18 +554,13 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #5A5A5A;
-
 }
 
 .article .container .article-cards .card .card-body .card-title  {
   font-size: 16px;
   font-weight: 500;
   line-height: 32px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #262626;
 }
 
@@ -579,8 +568,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 30px;
-  letter-spacing: 0em;
-  text-align: left;
   background-color: #747DAB;
 }
 
@@ -588,8 +575,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
   margin: 5px 0 0 0;
 }
 
@@ -632,28 +617,6 @@ footer h4 {
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-footer .footer-text {
-  padding: 0 30px 0 0 ;
-  text-align: justify;
-}
-
-footer .footer-text p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-footer .footer-text a {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: justify;
 }
 
 footer .social-item {
@@ -674,6 +637,15 @@ footer .contact-item {
 }
 
 footer .contact-item a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: justify;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .sitemap-item a {
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;

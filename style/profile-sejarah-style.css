@@ -48,6 +48,10 @@ body {
   font-size: 14px;
 }
 
+.nav-item a.show {
+  color: #fff;
+}
+
 .nav-item a:hover {
   font-family: 'Poppins', Helvetica, serif;
   color: #fff;
@@ -76,8 +80,8 @@ body {
 
 .search {
   font-size: 18px;
-  letter-spacing: 0em;
-  text-align: left;
+
+  
   margin-left: 5px;
   border: none;
   background-color: transparent;
@@ -149,9 +153,7 @@ img {
   font-family: "Conthrax", Helvetica, sans-serif;
   font-size: 80px;
   font-weight: 600;
-  line-height: 144px;
-  letter-spacing: 0em;
-  text-align: left;
+  line-height: 144px;  
 }
 
 .header .header-text .text h4 {
@@ -159,8 +161,6 @@ img {
   font-size: 45px;
   font-weight: 600;
   line-height: 86px;
-  letter-spacing: 0em;
-  text-align: left;
 }
 
 .header .header-text .text img {
@@ -171,7 +171,7 @@ img {
   font-size: 16px;
   font-weight: 600;
   line-height: 30px;
-  letter-spacing: 0em;
+
   text-align: justify;
   text-justify: inter-word;
 }
@@ -194,14 +194,13 @@ img {
     font-size: 35px;
     font-weight: 600;
     line-height: 86px;
-    letter-spacing: 0em;
-    text-align: left;
+  
+    
   }
 }
 /* End of Header */
 
 /* Breadcrumb */
-
 .breadcrumb {
   background-color: #424874;
 }
@@ -236,7 +235,7 @@ img {
 
 .history .container .history-body .history-body-text {
   font-size: 16px;
-  font-style: normal;
+ 
   font-weight: 400;
   line-height: 28px;
   text-align: justify;
@@ -255,6 +254,8 @@ img {
 
 .tagline {
   background-color: #747DAB;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .tagline .container {
@@ -288,7 +289,7 @@ footer h4 {
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
-  text-align: left;
+  
 }
 
 footer .footer-text {
@@ -304,12 +305,7 @@ footer .footer-text p {
   text-justify: inter-word;
 }
 
-footer .footer-text a {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-  text-align: justify;
-}
+   
 
 footer .social-item {
   margin: 0 0 10px 0;
@@ -332,7 +328,15 @@ footer .contact-item a {
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
-  letter-spacing: 0em;
+  text-align: justify;
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .sitemap-item a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
   text-align: justify;
   text-decoration: none;
   color: #fff;
@@ -340,7 +344,6 @@ footer .contact-item a {
 /* End of footer */
 
 /* Copyright */
-
 .copyright {
   background-color: #262626;
 }

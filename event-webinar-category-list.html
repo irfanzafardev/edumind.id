@@ -7,15 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/program-webinar-style.css">
+    <link rel="stylesheet" href="style//event-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>EduMind - Webinar Program</title>
-    
+    <title>EduMind - Webinar Event</title>
   </head>
   <body>
     <!-- Navigation Bar -->
@@ -32,14 +31,33 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profile-sejarah-page.html">Profil</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-black" href="profile-sejarah-page.html">Sejarah</a></li>
+                <li><a class="dropdown-item text-black" href="#">Tugas & Fungsi</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-black" href="#">Infografis</a></li>
+                <li><a class="dropdown-item text-black" href="#">Struktur Organisasi</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="program-page.html">Program</a>
+              <a class="nav-link active" href="event-page.html">Event</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="discussion-timeline.html">Diskusi</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Diskusi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-black" href="discussion-timeline.html">Timeline</a></li>
+                <li><a class="dropdown-item text-black" href="#">Jawaban</a></li>
+                <li><a class="dropdown-item text-black" href="#">Pertanyaan</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-black" href="#">Pertanyaan saya</a></li>
+                <li><a class="dropdown-item text-black" href="#">Jawaban saya</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="article-page.html">Artikel</a>
@@ -122,7 +140,7 @@
               </a>
             </div>
             <div class="category-item d-flex justify-content-center">
-              <a type="submit" href="#" class="btn btn-category text-white">
+              <a type="submit" href="event-webinar-category.html" class="btn btn-category text-white">
                 Kategori
               </a>
             </div>
@@ -151,7 +169,7 @@
 
         <!-- Webinar list section -->
         <div class="webinar-heading mx-auto text-center mb-4">
-          <a class="text-decoration-none" href="program-webinar-category.html">
+          <a class="text-decoration-none" href="event-webinar-category.html">
             <h1>Kategori</h1>
           </a>
         </div>
@@ -176,7 +194,7 @@
                     </li>
                   </ul>
                   <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
                   </div>
                 </div>
               </div>
@@ -200,7 +218,7 @@
                     </li>
                   </ul>
                   <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
                   </div>
                 </div>
               </div>
@@ -224,7 +242,7 @@
                     </li>
                   </ul>
                   <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
                   </div>
                 </div>
               </div>
@@ -248,134 +266,38 @@
                     </li>
                   </ul>
                   <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 py-3">
+              <div class="card mx-auto" style="width: 280px;">
+                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
+                <div class="card-body">
+                  <ul class="card-info">
+                    <li class="list-unstyled">
+                      <img class="d-inline" src="./assets/ic/title.png">
+                      <p class="d-inline">Judul</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/calendar.png">
+                      <p class="d-inline">Tanggal</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/category.png">
+                      <p class="d-inline">Event</p>
+                    </li>
+                  </ul>
+                  <div class="card-act d-flex justify-content-center mt-3">
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End of Webinar -->
 
-    <!-- Webinar -->
-    <section class="webinar mt-5">
-      <div class="container mt-3">
-        <!-- Webinar list section -->
-        <div class="webinar-heading mx-auto text-center mb-4">
-          <a class="text-decoration-none" href="#">
-            <h1>Kategori</h1>
-          </a>
-        </div>
-        <div class="webinar-cards mt-5">
-          <div class="row slider-webinar">
-            <div class="col-12 col-lg-3 py-3">
-              <div class="card mx-auto" style="width: 280px;">
-                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
-                <div class="card-body">
-                  <ul class="card-info">
-                    <li class="list-unstyled">
-                      <img class="d-inline" src="./assets/ic/title.png">
-                      <p class="d-inline">Judul</p>
-                    </li>
-                    <li class="list-unstyled mt-2">
-                      <img class="d-inline" src="./assets/ic/calendar.png">
-                      <p class="d-inline">Tanggal</p>
-                    </li>
-                    <li class="list-unstyled mt-2">
-                      <img class="d-inline" src="./assets/ic/category.png">
-                      <p class="d-inline">Event</p>
-                    </li>
-                  </ul>
-                  <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3 py-3">
-              <div class="card mx-auto" style="width: 280px;">
-                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
-                <div class="card-body">
-                  <ul class="card-info">
-                    <li class="list-unstyled">
-                      <img class="d-inline" src="./assets/ic/title.png">
-                      <p class="d-inline">Judul</p>
-                    </li>
-                    <li class="list-unstyled mt-2">
-                      <img class="d-inline" src="./assets/ic/calendar.png">
-                      <p class="d-inline">Tanggal</p>
-                    </li>
-                    <li class="list-unstyled mt-2">
-                      <img class="d-inline" src="./assets/ic/category.png">
-                      <p class="d-inline">Event</p>
-                    </li>
-                  </ul>
-                  <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3 py-3">
-              <div class="card mx-auto" style="width: 280px;">
-                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
-                <div class="card-body">
-                  <ul class="card-info">
-                    <li class="list-unstyled">
-                      <img class="d-inline" src="./assets/ic/title.png">
-                      <p class="d-inline">Judul</p>
-                    </li>
-                    <li class="list-unstyled mt-2">
-                      <img class="d-inline" src="./assets/ic/calendar.png">
-                      <p class="d-inline">Tanggal</p>
-                    </li>
-                    <li class="list-unstyled mt-2">
-                      <img class="d-inline" src="./assets/ic/category.png">
-                      <p class="d-inline">Event</p>
-                    </li>
-                  </ul>
-                  <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-3 py-3">
-              <div class="card mx-auto" style="width: 280px;">
-                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
-                <div class="card-body">
-                  <ul class="card-info">
-                    <li class="list-unstyled">
-                      <img class="d-inline" src="./assets/ic/title.png">
-                      <p class="d-inline">Judul</p>
-                    </li>
-                    <li class="list-unstyled mt-2">
-                      <img class="d-inline" src="./assets/ic/calendar.png">
-                      <p class="d-inline">Tanggal</p>
-                    </li>
-                    <li class="list-unstyled mt-2">
-                      <img class="d-inline" src="./assets/ic/category.png">
-                      <p class="d-inline">Event</p>
-                    </li>
-                  </ul>
-                  <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Webinar -->
-
-    <!-- Webinar -->
-    <section class="webinar mt-5">
-      <div class="container mt-3">
-        <!-- Webinar list section -->
         <div class="webinar-heading mx-auto text-center mb-4">
           <a class="text-decoration-none" href="#">
             <h1>Kategori</h1>
@@ -402,7 +324,7 @@
                     </li>
                   </ul>
                   <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
                   </div>
                 </div>
               </div>
@@ -426,7 +348,7 @@
                     </li>
                   </ul>
                   <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
                   </div>
                 </div>
               </div>
@@ -450,7 +372,7 @@
                     </li>
                   </ul>
                   <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
                   </div>
                 </div>
               </div>
@@ -474,7 +396,161 @@
                     </li>
                   </ul>
                   <div class="card-act d-flex justify-content-center mt-3">
-                    <a href="#" class="btn btn-primary">Gratis/Beli</a>
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 py-3">
+              <div class="card mx-auto" style="width: 280px;">
+                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
+                <div class="card-body">
+                  <ul class="card-info">
+                    <li class="list-unstyled">
+                      <img class="d-inline" src="./assets/ic/title.png">
+                      <p class="d-inline">Judul</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/calendar.png">
+                      <p class="d-inline">Tanggal</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/category.png">
+                      <p class="d-inline">Event</p>
+                    </li>
+                  </ul>
+                  <div class="card-act d-flex justify-content-center mt-3">
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="webinar-heading mx-auto text-center mb-4">
+          <a class="text-decoration-none" href="#">
+            <h1>Kategori</h1>
+          </a>
+        </div>
+        <div class="webinar-cards mt-5">
+          <div class="row slider-webinar">
+            <div class="col-12 col-lg-3 py-3">
+              <div class="card mx-auto" style="width: 280px;">
+                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
+                <div class="card-body">
+                  <ul class="card-info">
+                    <li class="list-unstyled">
+                      <img class="d-inline" src="./assets/ic/title.png">
+                      <p class="d-inline">Judul</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/calendar.png">
+                      <p class="d-inline">Tanggal</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/category.png">
+                      <p class="d-inline">Event</p>
+                    </li>
+                  </ul>
+                  <div class="card-act d-flex justify-content-center mt-3">
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 py-3">
+              <div class="card mx-auto" style="width: 280px;">
+                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
+                <div class="card-body">
+                  <ul class="card-info">
+                    <li class="list-unstyled">
+                      <img class="d-inline" src="./assets/ic/title.png">
+                      <p class="d-inline">Judul</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/calendar.png">
+                      <p class="d-inline">Tanggal</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/category.png">
+                      <p class="d-inline">Event</p>
+                    </li>
+                  </ul>
+                  <div class="card-act d-flex justify-content-center mt-3">
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 py-3">
+              <div class="card mx-auto" style="width: 280px;">
+                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
+                <div class="card-body">
+                  <ul class="card-info">
+                    <li class="list-unstyled">
+                      <img class="d-inline" src="./assets/ic/title.png">
+                      <p class="d-inline">Judul</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/calendar.png">
+                      <p class="d-inline">Tanggal</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/category.png">
+                      <p class="d-inline">Event</p>
+                    </li>
+                  </ul>
+                  <div class="card-act d-flex justify-content-center mt-3">
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 py-3">
+              <div class="card mx-auto" style="width: 280px;">
+                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
+                <div class="card-body">
+                  <ul class="card-info">
+                    <li class="list-unstyled">
+                      <img class="d-inline" src="./assets/ic/title.png">
+                      <p class="d-inline">Judul</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/calendar.png">
+                      <p class="d-inline">Tanggal</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/category.png">
+                      <p class="d-inline">Event</p>
+                    </li>
+                  </ul>
+                  <div class="card-act d-flex justify-content-center mt-3">
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 py-3">
+              <div class="card mx-auto" style="width: 280px;">
+                <img src="./assets/ic/blank-4x5.png" class="card-img-top">
+                <div class="card-body">
+                  <ul class="card-info">
+                    <li class="list-unstyled">
+                      <img class="d-inline" src="./assets/ic/title.png">
+                      <p class="d-inline">Judul</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/calendar.png">
+                      <p class="d-inline">Tanggal</p>
+                    </li>
+                    <li class="list-unstyled mt-2">
+                      <img class="d-inline" src="./assets/ic/category.png">
+                      <p class="d-inline">Event</p>
+                    </li>
+                  </ul>
+                  <div class="card-act d-flex justify-content-center mt-3">
+                    <a href="#" class="btn btn-primary-none">Gratis/Beli</a>
                   </div>
                 </div>
               </div>
@@ -498,55 +574,55 @@
       <div class="container py-5">
         <div class="row text-white">
           <div class="col-6 col-lg-4">
-            <div class="footer-text">
-              <h4>Tentang Kami</h4>
-              <p>Edumind adalah sebuah situs untuk kumpulan event online seperti webinar, workshop, ataupun kursus dan juga terdapat ruang untuk diskusi.</p>
+            <h4>Kontak</h4>
+            <div class="contact-list text-white">
+              <div class="contact-item">
+                <img src="./assets/ic/phone.png">
+                <a href="#">089632101841</a>
+              </div>
+              <div class="contact-item">
+                <img src="./assets/ic/whatsapp.png">
+                <a href="#">089632101841</a>
+              </div>
+              <div class="contact-item">
+                <img src="./assets/ic/telegram.png">
+                <a href="#">089632101841</a>
+              </div>
+              <div class="contact-item">
+                <img src="./assets/ic/email.png">
+                <a href="#">edumindindonedia@gmail.com</a>
+              </div>
             </div>
           </div>
           <div class="col-6 col-lg-2">
             <h4>Media Sosial</h4>
             <div class="social-list text-white">
               <div class="social-item">
-                <img src="./assets/ic/instagram.png" alt="">
+                <img src="./assets/ic/instagram.png">
                 <a href="#">instagram</a>
               </div>
               <div class="social-item">
-                <img src="./assets/ic/facebook.png" alt="">
+                <img src="./assets/ic/facebook.png">
                 <a href="#">facebook</a>
               </div>
               <div class="social-item">
-                <img src="./assets/ic/twitter.png" alt="">
+                <img src="./assets/ic/twitter.png">
                 <a href="#">twitter</a>
               </div>
               <div class="social-item">
-                <img src="./assets/ic/web.png" alt="">
+                <img src="./assets/ic/web.png">
                 <a href="#">web</a>
               </div>
             </div>
           </div>
           <div class="col-6 col-lg-4">
-            <h4>Kontak</h4>
-            <div class="contact-list text-white">
-              <div class="contact-item">
-                <img src="./assets/ic/phone.png" alt="">
-                <a href="#">089632101841</a>
-              </div>
-              <div class="contact-item">
-                <img src="./assets/ic/whatsapp.png" alt="">
-                <a href="#">089632101841</a>
-              </div>
-              <div class="contact-item">
-                <img src="./assets/ic/telegram.png" alt="">
-                <a href="#">089632101841</a>
-              </div>
-              <div class="contact-item">
-                <img src="./assets/ic/email.png" alt="">
-                <a href="#">edumindindonedia@gmail.com</a>
-              </div>
+            <h4>Sitemap</h4>
+            <div class="sitemap-item">
+              <a href="sitemap-page.html">sitemap</a>
             </div>
           </div>
           <div class="col-2">
-            <img src="./assets/ic/logo-vertical.png" alt="" width="120px">
+            <img src="./assets/ic/logo-vertical.png" alt="EduMind-Logo" width="120px" >
           </div>
         </div>
       </div>
@@ -622,7 +698,7 @@
         dots: true,
         infinite: true,
         speed: 1200,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         prevArrow: '<span class="prev-arrow-webinar"><i class="fas fa-chevron-left"></i></span>',
         nextArrow: '<span class="next-arrow-webinar"><i class="fas fa-chevron-right"></i></span>',
@@ -661,6 +737,5 @@
         ]
       });
     </script>
-    
   </body>
 </html>

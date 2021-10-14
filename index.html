@@ -8,19 +8,17 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>EduMind</title>
-
 </head>
-
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg fixed-top">
@@ -36,14 +34,33 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile-sejarah-page.html">Profil</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profile
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-black" href="profile-sejarah-page.html">Sejarah</a></li>
+              <li><a class="dropdown-item text-black" href="#">Tugas & Fungsi</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-black" href="#">Infografis</a></li>
+              <li><a class="dropdown-item text-black" href="#">Struktur Organisasi</a></li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="program-webinar.html">Program</a>
+            <a class="nav-link" href="event-page.html">Event</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="discussion-timeline.html">Diskusi</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Diskusi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-black" href="discussion-timeline.html">Timeline</a></li>
+              <li><a class="dropdown-item text-black" href="#">Jawaban</a></li>
+              <li><a class="dropdown-item text-black" href="#">Pertanyaan</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-black" href="#">Pertanyaan saya</a></li>
+              <li><a class="dropdown-item text-black" href="#">Jawaban saya</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="article-page.html">Artikel</a>
@@ -212,7 +229,7 @@
                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque consequuntur repudiandae, unde pariatur est nam.
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                          <button type="button" class="btn btn-primary-none" data-bs-dismiss="modal">OK</button>
                         </div>
                       </div>
                     </div>
@@ -241,7 +258,7 @@
                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque consequuntur repudiandae, unde pariatur est nam.
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                          <button type="button" class="btn btn-primary-none" data-bs-dismiss="modal">OK</button>
                         </div>
                       </div>
                     </div>
@@ -270,7 +287,7 @@
                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque consequuntur repudiandae, unde pariatur est nam.
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                          <button type="button" class="btn btn-primary-none" data-bs-dismiss="modal">OK</button>
                         </div>
                       </div>
                     </div>
@@ -299,7 +316,7 @@
                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque consequuntur repudiandae, unde pariatur est nam.
                         </div>
                         <div class="modal-footer">
-                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                          <button type="button" class="btn btn-primary-none" data-bs-dismiss="modal">OK</button>
                         </div>
                       </div>
                     </div>
@@ -368,7 +385,7 @@
   <!-- End of FAQ -->
 
   <!-- Tagline -->
-  <section class="tagline">
+  <section class="tagline-top">
     <div class="container d-flex justify-content-center text-white">
       <h3 class="m-0">Tagline</h3>
     </div>
@@ -388,48 +405,55 @@
           <div class="swiper-slide d-flex justify-content-center">
             <div class="card">
               <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile">
+                <img src="./assets/profile/profile-ade.jpg" class="img-fluid" alt="Photo-profile">
               </div>
               <div class="card-body text-center p-4">
-                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- yung</h5>
+                <p class="card-text">“Dulu aku suka bingung cari tempat kursus online yang sesuai sama aku tapi semenjak ada EBUMIND aku udah nggak bingung lagi, karena EBUMIND nyediain apa yang aku butuhin. Terima kasih EBUMIND.”</p>
+                <h5 class="card-title">- Ade Windu K.</h5>
               </div>
             </div>
           </div>
           <div class="swiper-slide d-flex justify-content-center">
             <div class="card">
               <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile"  >
+                <img src="./assets/profile/profile-ridhal.jpeg" class="img-fluid" alt="Photo-profile"  >
               </div>
               <div class="card-body text-center p-4">
-                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- Bram</h5>
+                <p class="card-text">“Edumind sangat bermanfaat untuk saya yang suka mengikuti acara webinar dengan tema informasi teknologi.”</p>
+                <h5 class="card-title">- Ridhal Fajri</h5>
               </div>
             </div>
           </div>
           <div class="swiper-slide d-flex justify-content-center">
             <div class="card">
               <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile"  >
+                <img src="./assets/profile/profile-sade.png" class="img-fluid" alt="Photo-profile"  >
               </div>
               <div class="card-body text-center p-4">
-                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- yung Bram</h5>
+                <p class="card-text">“SIAPAPUN MAKASIH BANGET YG UDAH CIPTAIN EDUMIND, Bermanfaat bgt buat aku yang pengen sharing atau pengetahuan diluar kampus. Teman-temannya juga asik banget, materi dari webinar yang disediakan  cukup fresh dan insightful. Tutornya juga menjelaskan dengan mudah sehingga bagi mereka yang belum pernah sama sekali tau bisa memahami alur dari materi.”</p>
+                <h5 class="card-title">- Sasarweni Ayu</h5>
               </div>
             </div>
           </div>
           <div class="swiper-slide d-flex justify-content-center">
             <div class="card">
               <div class="card-img d-flex justify-content-center py-4">
-                <img src="./assets/profile/profile-1.jpeg" class="img-fluid" alt="Photo-profile"  >
+                <img src="./assets/profile/profile-rine.jpeg" class="img-fluid" alt="Photo-profile"  >
               </div>
               <div class="card-body text-center p-4">
-                <p class="card-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et nostrud exercitation ullac.”</p>
-                <h5 class="card-title">- Bram yung</h5>
+                <p class="card-text">“Edumind sangat bermanfaat untuk saya, apalagi pada saat pandemi saat ini sehingga saya bisa lebih mengexplore dan menambah pengetahuan dengan mengikuti kelas kelas kursus maupun webinar, workshop yang ada di edumind tanpa ribet. Selain itu, disini juga ada fitur diskusi yang sering saya gunakan juga untuk bertanya mengenai topik yang ingin saya mengerti.”</p>
+                <h5 class="card-title">- Rine Alfi F.</h5>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide d-flex justify-content-center">
+            <div class="card">
+              <div class="card-img d-flex justify-content-center py-4">
+                <img src="./assets/profile/profile-abdiel.jpeg" class="img-fluid" alt="Photo-profile"  >
+              </div>
+              <div class="card-body text-center p-4">
+                <p class="card-text">“Menurut saya edumind menjadi tempat yang cocok untuk belajar banyak hal terutama pada masa pandemi ini. Bagi saya masa pandemi tidak menghambat saya untuk mencoba menggali informasi yang ingin saya dapatkan. Selain itu, edumind juga cocok untuk berdiskusi atau menanyakan hal yang saya kurang pahami. Terima kasih edumind.”</p>
+                <h5 class="card-title">- Abdiel Brain</h5>
               </div>
             </div>
           </div>
@@ -455,7 +479,7 @@
                 <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut enim in massa
                   fringilla </h5>
                 <div class="card-act d-flex justify-content-between mt-3">
-                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary-none">Selengkapnya</a>
                   <h5 class="card-date">Kategori</h5>
                 </div>
               </div>
@@ -469,7 +493,7 @@
                 <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut enim in massa
                   fringilla </h5>
                 <div class="card-act d-flex justify-content-between mt-3">
-                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary-none">Selengkapnya</a>
                   <h5 class="card-date">Kategori</h5>
                 </div>
               </div>
@@ -483,7 +507,7 @@
                 <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut enim in massa
                   fringilla </h5>
                 <div class="card-act d-flex justify-content-between mt-3">
-                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary-none">Selengkapnya</a>
                   <h5 class="card-date">Kategori</h5>
                 </div>
               </div>
@@ -497,7 +521,7 @@
                 <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut enim in massa
                   fringilla </h5>
                 <div class="card-act d-flex justify-content-between mt-3">
-                  <a href="#" class="btn btn-primary">Selengkapnya</a>
+                  <a href="#" class="btn btn-primary-none">Selengkapnya</a>
                   <h5 class="card-date">Kategori</h5>
                 </div>
               </div>
@@ -523,10 +547,24 @@
     <div class="container py-5">
       <div class="row text-white">
         <div class="col-6 col-lg-4">
-          <div class="footer-text">
-            <h4>Tentang Kami</h4>
-            <p>Edumind adalah sebuah situs untuk kumpulan event online seperti webinar, workshop, ataupun kursus dan
-              juga terdapat ruang untuk diskusi.</p>
+          <h4>Kontak</h4>
+          <div class="contact-list text-white">
+            <div class="contact-item">
+              <img src="./assets/ic/phone.png">
+              <a href="#">089632101841</a>
+            </div>
+            <div class="contact-item">
+              <img src="./assets/ic/whatsapp.png">
+              <a href="#">089632101841</a>
+            </div>
+            <div class="contact-item">
+              <img src="./assets/ic/telegram.png">
+              <a href="#">089632101841</a>
+            </div>
+            <div class="contact-item">
+              <img src="./assets/ic/email.png">
+              <a href="#">edumindindonedia@gmail.com</a>
+            </div>
           </div>
         </div>
         <div class="col-6 col-lg-2">
@@ -551,24 +589,9 @@
           </div>
         </div>
         <div class="col-6 col-lg-4">
-          <h4>Kontak</h4>
-          <div class="contact-list text-white">
-            <div class="contact-item">
-              <img src="./assets/ic/phone.png">
-              <a href="#">089632101841</a>
-            </div>
-            <div class="contact-item">
-              <img src="./assets/ic/whatsapp.png">
-              <a href="#">089632101841</a>
-            </div>
-            <div class="contact-item">
-              <img src="./assets/ic/telegram.png">
-              <a href="#">089632101841</a>
-            </div>
-            <div class="contact-item">
-              <img src="./assets/ic/email.png">
-              <a href="#">edumindindonedia@gmail.com</a>
-            </div>
+          <h4>Sitemap</h4>
+          <div class="sitemap-item">
+            <a href="sitemap-page.html">sitemap</a>
           </div>
         </div>
         <div class="col-2">
