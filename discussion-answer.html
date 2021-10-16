@@ -173,8 +173,9 @@
                   <div class="comment d-inline mx-3 align-self-center">
                     <span>Kategori</span>
                   </div>
-                  <div class="ms-auto">
-                    <button type="submit" class="btn share-bg">Jawab<span><img class="ms-2" src="./assets/ic/answer-svg.svg" width="20px"></span></button>
+                  <div class="copy-text ms-auto">
+                    <a type="submit" class="btn share-bg">Jawab<span><img class="ms-2" src="./assets/ic/answer-svg.svg" width="20px"></span></a>
+                    <input type="text" class="text" value="qqwqwqw" readonly style="z-index: 999; position: absolute; right: 0; top: 0;">
                     <button type="submit" class="btn share-bg">Bagikan<span><img class="ms-2" src="./assets/ic/share.png" width="20px"></span></button>
                   </div>
                 </div>
@@ -225,7 +226,8 @@
                   <div class="comment d-inline mx-3 align-self-center">
                     <span>Kategori</span>
                   </div>
-                  <div class="ms-auto">
+                  <div class="copy-text ms-auto">
+                    <input type="text" class="text" value="mmnnn" readonly style="z-index: 999; position: absolute; right: 0; top: 0;">
                     <button type="submit" class="btn ">Bagikan<span><img class="ms-2" src="./assets/ic/share.png" width="20px"></span></button>
                   </div>
                 </div>
@@ -275,7 +277,8 @@
                   <div class="comment d-inline mx-3 align-self-center">
                     <span>Kategori</span>
                   </div>
-                  <div class="ms-auto">
+                  <div class="copy-text ms-auto">
+                    <input type="text" class="text" value="mmnnn" readonly style="z-index: 999; position: absolute; right: 0; top: 0;">
                     <button type="submit" class="btn ">Bagikan<span><img class="ms-2" src="./assets/ic/share.png" width="20px"></span></button>
                   </div>
                 </div>
@@ -441,6 +444,14 @@
   </script>
   <!-- FontAwesome JS -->
   <script src="https://kit.fontawesome.com/b3b03a4327.js" crossorigin="anonymous"></script>
+  <script>
+    let copyText = document.querySelector(".copy-text");
+    copyText.querySelector("button").addEventListener("click",function(){
+      let input = copyText.querySelector("input.text");
+      input.select();
+      document.execCommand("copy");
+    }); 
+  </script>
 </body>
 
 </html>
