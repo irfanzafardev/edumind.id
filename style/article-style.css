@@ -130,8 +130,8 @@ img {
 
 .header .vector-below {
   position: absolute;
-  bottom: 200px;
-  z-index: -1;
+  bottom: 230px;
+  z-index: 1;
 }
 
 .header .vector-above {
@@ -438,7 +438,6 @@ footer .sitemap-item a {
 /* End of footer */
 
 /* Copyright */
-
 .copyright {
   background-color: #262626;
 }

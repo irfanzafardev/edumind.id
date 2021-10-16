@@ -138,7 +138,9 @@
         <div class="col-12 col-lg-9">
           <div class="article-text">
             <div class="article-comment mt-4">
-              <div class="article-comment-box">
+              
+              <!-- article-comment-box -->
+              <div class="article-comment-box mb-5">
                 <h5 class="py-1">Ajukan Pertanyaan</h5>
                 <div class="form-floating">
                   <textarea class="form-control" id="floatingTextarea"></textarea>
@@ -167,9 +169,11 @@
                   </div>
                 </div>
               </div>
-
-              <!-- discussion-comment-display -->
-              <div class="article-comment-display mt-5">
+              <!-- article-comment-display -->
+              <div class="article-heading mx-auto text-center mb-5">
+                <h2>Pertanyaan Saya</h2>
+              </div>
+              <div class="article-comment-display my-5">
                 <div class="comment-info d-flex justify-content-between">
                   <div class="d-inline-flex">
                     <img src="./assets/ic/person-comment.png" alt="profile-img" width="48px">
@@ -179,34 +183,27 @@
                     </div>   
                   </div>
                   <a href="">
-                    <img class="" src="./assets/ic/report.png" alt="report-img" width="40px">
+                    <img class="" src="./assets/ic/delete-svg.svg" alt="report-img" width="24px">
                   </a>
                 </div>
                 <div class="comment-text">
-                  <span class="d-block fw-bold">Pertanyaan yang ditanya oleh pengguna lainnya</span>
-                  <p>
-                    Komentar yang dikirim oleh pengguna lainnya lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  <span class="d-block fw-bold my-3">Pertanyaan yang diajukan</span>
                 </div>
                 <div class="like-comment mt-3 d-flex">
                   <div class="like d-inline align-self-center">
-                    <span>19.721</span>
-                    <img class="me-0" src="./assets/ic/like.png" alt="" width="24px">
-                  </div>
-                  <div class="comment d-inline mx-3 align-self-center">
-                    <span>31</span>
-                    <img class="me-0" src="./assets/ic/commment.png" alt="">
+                    <span>7</span>
+                    <span>Jawaban</span>
+                    <img class="me-0" src="./assets/ic/answer-svg.svg" width="20px">
                   </div>
                   <div class="comment d-inline mx-3 align-self-center">
                     <span>Kategori</span>
                   </div>
                   <div class="ms-auto">
-                    <button type="submit" class="btn ">Bagikan<span><img class="ms-2" src="./assets/ic/share.png" width="20px"></span></button>
+                    <button type="submit" class="btn">Jawab<span><img class="ms-2" src="./assets/ic/answer-svg.svg" width="20px"></span></button>
                   </div>
                 </div>
               </div>
-
-              <div class="article-comment-display mt-5">
+              <div class="article-comment-display my-5">
                 <div class="comment-info d-flex justify-content-between">
                   <div class="d-inline-flex">
                     <img src="./assets/ic/person-comment.png" alt="profile-img" width="48px">
@@ -216,29 +213,23 @@
                     </div>   
                   </div>
                   <a href="">
-                    <img class="" src="./assets/ic/report.png" alt="report-img" width="40px">
+                    <img class="" src="./assets/ic/delete-svg.svg" alt="report-img" width="24px">
                   </a>
                 </div>
                 <div class="comment-text">
-                  <span class="d-block fw-bold">Pertanyaan yang ditanya oleh pengguna lainnya</span>
-                  <p>
-                    Komentar yang dikirim oleh pengguna lainnya lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  <span class="d-block fw-bold my-3">Pertanyaan yang diajukan</span>
                 </div>
                 <div class="like-comment mt-3 d-flex">
                   <div class="like d-inline align-self-center">
-                    <span>19.721</span>
-                    <img class="me-0" src="./assets/ic/like.png" alt="" width="24px">
-                  </div>
-                  <div class="comment d-inline mx-3 align-self-center">
-                    <span>31</span>
-                    <img class="me-0" src="./assets/ic/commment.png" alt="">
+                    <span>7</span>
+                    <span>Jawaban</span>
+                    <img class="me-0" src="./assets/ic/answer-svg.svg" width="20px">
                   </div>
                   <div class="comment d-inline mx-3 align-self-center">
                     <span>Kategori</span>
                   </div>
                   <div class="ms-auto">
-                    <button type="submit" class="btn">Bagikan<span><img class="ms-2" src="./assets/ic/share.png" width="20px"></span></button>
+                    <button type="submit" class="btn">Jawab<span><img class="ms-2" src="./assets/ic/answer-svg.svg" width="20px"></span></button>
                   </div>
                 </div>
               </div>
@@ -249,9 +240,9 @@
         <!-- Article Sidebar -->
         <div class="col-12 col-lg-3 sidebar d-none d-lg-block mt-4">
           <div class="article-category-alt mb-4">
-            <div class="article-category-sidebar d-flex justify-content-center">
+            <div class="article-heading d-flex justify-content-center">
               <img src="./assets/ic/category-svg.svg" class="d-inline" width="18px">
-              <h4 class=" pt-1">Topik</h4>
+              <h4 class="d-inline pt-1">Topik</h4>
             </div>
             <div class="article-list mt-2">
               <ul>

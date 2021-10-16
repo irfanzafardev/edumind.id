@@ -131,8 +131,8 @@ img {
 
 .header .vector-below {
   position: absolute;
-  bottom: 200px;
-  z-index: -1;
+  bottom: 230px;
+  z-index: 1;
 }
 
 .header .vector-above {
@@ -184,12 +184,6 @@ img {
   text-justify: inter-word;
 }
 
-.header .header-text .text button {
-  padding: 8px 12px;
-  background-color: #424874;
-  border-radius: 30px;
-}
-
 @media (max-width: 767px) {
   .header .header-text .text img {
     width: 250px;
@@ -234,8 +228,12 @@ img {
 }
 /* End of Breadcrumb */
 
-
 /* Discussion Body */
+.article-body .container .article-heading {
+  border-style: none none solid none;
+  width: 350px;
+}
+
 .article-comment .article-comment-box {
   background-color: #747DAB;
   padding: 16px 16px 10px 16px ;
@@ -246,7 +244,6 @@ img {
   color: #fff;
   font-family: "Poppins";
   font-size: 18px;
- 
   font-weight: 600;
 }
 
@@ -258,11 +255,19 @@ img {
 .article-comment .article-comment-box button {
   background-color: #A6B1E1;
   margin: 10px 0 0 0 ;
+  padding: 0;
 }
 
 .article-comment .article-comment-box .dropdown-toggle {
   background-color: #F4EEFF;
   margin: 10px 0 0 0 ;
+}
+
+.article-comment .article-comment-box .btn-dropdown {
+  background-color: #F4EEFF;
+  margin: 10px 0 0 0 ;
+  border: none;
+  border-radius: 8px;
 }
 
 .article-comment .article-comment-display {
@@ -275,6 +280,31 @@ img {
   background-color: transparent;
   padding: 16px 0 1px 0;
   border-bottom: #262626 1px solid;
+}
+
+.article-comment .article-comment-display .comment-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.article-comment-display .like-comment .like-bg {
+  background: #DCD6F7;
+  padding: 6px 8px 6px 10px;
+  border-radius: 30px;
+}
+
+.article-comment-display .like-comment .comment-bg {
+  background: #DCD6F7;
+  padding: 6px 8px 6px 10px;
+  border-radius: 30px;
+}
+
+.article-comment-display .share-bg {
+  background: #DCD6F7;
+  padding: 6px 8px 6px 10px;
+  border-radius: 30px;
 }
 
 @media (max-width: 767px) {
@@ -291,16 +321,16 @@ img {
 /* End of Article Body */
 
 /* Article Sidebar */
-.article-category-alt {
+.article-category-sidebar {
   background-color: transparent;
 }
 
-.article-category-alt .article-heading {
+.article-category-alt .article-category-sidebar {
   border-bottom: #000 solid 2px;
-  margin: 0 60px;
+  /* padding: 0 140px !important; */
 }
 
-.article-category-alt .article-heading h4 {
+.article-category-alt .article-category-sidebar h4 {
   font-size: 18px;
   font-weight: 600;
   line-height: 33px;
@@ -533,7 +563,6 @@ footer .sitemap-item a {
 /* End of footer */
 
 /* Copyright */
-
 .copyright {
   background-color: #262626;
 }

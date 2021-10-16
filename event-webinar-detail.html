@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/upload-event-style.css">
+    <link rel="stylesheet" href="style/event-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -241,16 +241,28 @@
                 </div>
               </div>          
             </a>
-            <a href="#" type="submit" class="btn btn-upload d-inline mt-4">
-              <div class="row">
-                <div class="col-7 d-flex justify-content-end" style="padding-right: 38px;">
-                  Copy Link
-                </div>
-                <div class="col-5 d-flex justify-content-end">
-                  <img class="pt-1" src="./assets/ic/copy-svg.svg" width="20px">        
-                </div>
-              </div>          
-            </a>
+
+            <!-- <div class="copy-text">
+              <input type="text" class="text" value="ppp" readonly>
+              <button>
+                <img src="./assets/ic/copy-svg.svg" alt="" width="20px">
+              </button>
+            </div> -->
+
+            <div class="copy-text">
+              <input type="text" class="text" value="link gan" readonly style="z-index: -999; position: absolute; bottom: 0;">
+              <button href="#" type="submit" class="btn btn-upload d-inline mt-4">
+                <div class="row">
+                  <div class="col-7 d-flex justify-content-end copy-text" style="padding-right: 38px;">
+                    Copy Link
+                  </div>
+                  <div class="col-5 d-flex justify-content-end">
+                    <img class="pt-1" src="./assets/ic/copy-svg.svg" width="20px">
+                  </div>
+                </div>          
+              </button>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -433,5 +445,14 @@
         ]
       });
     </script>
+    <script>
+      let copyText = document.querySelector(".copy-text");
+      copyText.querySelector("button").addEventListener("click",function(){
+        let input = copyText.querySelector("input.text");
+        input.select();
+        document.execCommand("copy");
+      }); 
+    </script>
+    
   </body>
 </html>

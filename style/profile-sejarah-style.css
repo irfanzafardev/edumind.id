@@ -226,7 +226,6 @@ img {
 
 
 /* History */
-
 .history .container .history-heading {
   border-style: none none solid none;
   width: 350px;
@@ -235,23 +234,14 @@ img {
 
 .history .container .history-body .history-body-text {
   font-size: 16px;
- 
   font-weight: 400;
   line-height: 28px;
   text-align: justify;
   text-justify: inter-word;
 }
-
-
-
-
-
-
-
 /* End of Article */
 
 /* Tagline */
-
 .tagline {
   background-color: #747DAB;
   border-top-left-radius: 16px;
