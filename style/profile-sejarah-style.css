@@ -129,8 +129,8 @@ img {
 
 .header .vector-below {
   position: absolute;
-  bottom: 200px;
-  z-index: -1;
+  bottom: 230px;
+  z-index: 1;
 }
 
 .header .vector-above {
@@ -194,8 +194,6 @@ img {
     font-size: 35px;
     font-weight: 600;
     line-height: 86px;
-  
-    
   }
 }
 /* End of Header */
@@ -224,62 +222,94 @@ img {
 }
 /* End of Breadcrumb */
 
+/* Article */
+.history .history-body .history-body-text p {
+  text-align: justify;
+  margin-bottom: 60px;
+}
+/* End of Article */
 
-/* History */
-.history .container .history-heading {
+/* Profile */
+.profile .container .profile-heading {
   border-style: none none solid none;
   width: 350px;
   color: #424874;
 }
 
-.history .container .history-body .history-body-text {
+.profile .container .profile-body .history-body-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
   text-align: justify;
   text-justify: inter-word;
 }
-/* End of Article */
+/* End of Profile */
 
-/* Tagline */
-.tagline {
-  background-color: #747DAB;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
+/* Contact */
+.profile .profile-body {
+  padding: 30px 20px;
+  background-color: #F4EEFF;
+  box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
 }
 
-.tagline .container {
-  padding: 10px;
+.profile .profile-body h5,
+.profile .profile-body p
+{
+  color: #424874;
+  font-weight: 600;
+}
+/* End of Contact */
+
+/* Email */
+.profile .email-us {
+  padding: 60px 50px;
+  background-color: #F4EEFF;
+  box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
 }
 
-.tagline .container h3 {
-  font-size: 22px;
+.profile .container .profile-body  .form-heading {
+  font-size: 16px;
   font-weight: 500;
-  line-height: 54px;
-  text-align: center;
+  line-height: 33px;
+  color: #424874;
 }
 
-.tagline .container h3 a {
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 54px;
-  text-align: center;
-  text-decoration: underline;
-  color: #DCD6F7;
+.profile .container .profile-body .form-input-box {
+  padding: 0 10px;
+  min-height: 36px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
 }
-/* End of Tagline */
+
+.profile .container .profile-body .form-input-textarea {
+  min-height: 180px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+}
+
+.profile .profile-body  button {
+  background-color: #A6B1E1;
+  margin: 10px 0 0 0 ;
+  padding: 0;
+  border-radius: 20px;
+}
+/* End of Email */
 
 /* Footer */
-
 footer {
   background-color: #424874;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 footer h4 {
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
-  
 }
 
 footer .footer-text {
@@ -294,8 +324,6 @@ footer .footer-text p {
   text-align: justify;
   text-justify: inter-word;
 }
-
-   
 
 footer .social-item {
   margin: 0 0 10px 0;

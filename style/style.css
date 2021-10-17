@@ -339,7 +339,7 @@ body {
 }
 /* End of FAQ */
 
-/* Tagline-top */
+/* Tagline */
 .tagline {
   background-color: #747DAB;
   border-top-left-radius: 16px;
@@ -365,7 +365,7 @@ body {
   text-decoration: underline;
   color: #DCD6F7;
 }
-/* End of Tagline-top */
+/* End of Tagline */
 
 /* Tagline */
 .tagline-top {
