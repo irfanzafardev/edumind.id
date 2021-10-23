@@ -202,7 +202,46 @@
                   </div>
 
                   <div class="copy-text ms-auto">
-                    <input type="text" class="text" value="yreuyweur" readonly style="z-index: 999; position: absolute; right: 0; top: 0;">
+                    <input type="text" class="text" value="tampan" readonly style="z-index: 999; position: absolute; right: 0; top: 0;">
+                    <button type="submit" class="btn ">Bagikan<span><img class="ms-2" src="./assets/ic/share.png" width="20px"></span></button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="article-comment-display mt-5">
+                <div class="comment-info d-flex justify-content-between">
+                  <div class="d-inline-flex">
+                    <img src="./assets/ic/person-comment.png" alt="profile-img" width="48px">
+                    <div class="d-block">
+                      <span class="d-block fw-bold">Nama Pengguna yg Menjawab Pertanyaan</span>
+                      <span class="d-block">Waktu komentar (Mis: 20 jam yang lalu, 1 hari yang lalu, dst)</span>
+                    </div>   
+                  </div>
+                  <a href="">
+                    <img class="" src="./assets/ic/report.png" alt="report-img" width="40px">
+                  </a>
+                </div>
+                <div class="comment-text">
+                  <span class="d-block fw-bold">Pertanyaan yang ditanya oleh pengguna lainnya</span>
+                  <p>
+                    Komentar yang dikirim oleh pengguna lainnya lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="like-comment mt-3 d-flex">
+                  <div class="like d-inline align-self-center">
+                    <span>19.721</span>
+                    <img class="me-0" src="./assets/ic/like.png" alt="" width="24px">
+                  </div>
+                  <div class="comment d-inline mx-3 align-self-center">
+                    <span>31</span>
+                    <img class="me-0" src="./assets/ic/commment.png" alt="">
+                  </div>
+                  <div class="comment d-inline mx-3 align-self-center">
+                    <span>Kategori</span>
+                  </div>
+
+                  <div class="copy-text-2 ms-auto">
+                    <input type="text" class="text" value="berani" readonly style="z-index: 999; position: absolute; right: 0; top: 0;">
                     <button type="submit" class="btn ">Bagikan<span><img class="ms-2" src="./assets/ic/share.png" width="20px"></span></button>
                   </div>
                 </div>
@@ -372,6 +411,15 @@
     let copyText = document.querySelector(".copy-text");
     copyText.querySelector("button").addEventListener("click",function(){
       let input = copyText.querySelector("input.text");
+      input.select();
+      document.execCommand("copy");
+    });
+  </script>
+
+  <script>
+    let copyText2 = document.querySelector(".copy-text-2");
+    copyText2.querySelector("button").addEventListener("click",function(){
+      let input = copyText2.querySelector("input.text");
       input.select();
       document.execCommand("copy");
     }); 
