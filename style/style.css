@@ -127,6 +127,10 @@ body {
     border-radius: 50px;
   }
 }
+
+.show {
+  background-color: "red";
+}
 /* End of Navbar */
 
 /* Header */
